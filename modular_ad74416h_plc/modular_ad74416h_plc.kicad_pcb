@@ -78,6 +78,88 @@
 		)
 	)
 	(net 0 "")
+	(footprint "modules_footprints:ad74416h_power_interface_module"
+		(layer "F.Cu")
+		(uuid "75492c20-385a-435d-b061-7bed598f5197")
+		(at 156.4894 100.7618)
+		(property "Reference" "MOD1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "11a6f294-4585-4d3f-8f20-4490cbca93df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "936d7e18-093b-4ebd-a6dc-08d602a7e1af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af1a924e-a17c-493b-8d8b-82c9e9369b55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b07905e-a3bc-4455-af73-ee21c4629196")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ca94a80a-013a-486e-a158-3be29c01124c")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "1f87e90f-7561-46a0-9d3e-0a7f50537760")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module.step"
+			(offset
+				(xyz 0 0 -4)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(gr_rect
 		(start 153.9494 98.2218)
 		(end 159.0294 103.3018)
