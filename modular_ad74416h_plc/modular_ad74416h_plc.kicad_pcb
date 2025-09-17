@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(general
-		(thickness 1.6)
+		(thickness 1.092)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -34,6 +34,45 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 1.002)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
@@ -808,7 +847,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 11.43)
+				(xyz 0 0 10.16)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1473,7 +1512,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module.step"
 			(offset
-				(xyz 0 0 -4)
+				(xyz 0 0 -5.270000001)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2213,7 +2252,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 34.29)
+				(xyz 0 0 33.02)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2953,13 +2992,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 -1.27)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -3693,7 +3732,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 22.86)
+				(xyz 0 0 21.59)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3703,16 +3742,89 @@
 			)
 		)
 	)
-	(gr_rect
-		(start 116.205 54.5338)
-		(end 170.6372 100.838)
+	(gr_arc
+		(start 120.1547 59.7662)
+		(mid 120.377885 59.227385)
+		(end 120.9167 59.0042)
 		(stroke
 			(width 0.05)
-			(type solid)
+			(type default)
 		)
-		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "4fcecea3-d0c7-4ec6-85ec-8087a3342400")
+		(uuid "0bdc6aa3-b96a-4794-ab0b-d2797d42d8b5")
+	)
+	(gr_line
+		(start 120.1547 96.3422)
+		(end 120.1547 59.7662)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "11f4bca5-8dcf-43cd-ac90-583930beee27")
+	)
+	(gr_line
+		(start 120.9167 59.0042)
+		(end 165.1381 59.0042)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2ae9f347-be17-4fea-988d-2fbf5d8274b2")
+	)
+	(gr_arc
+		(start 165.9001 96.3422)
+		(mid 165.676915 96.881015)
+		(end 165.1381 97.1042)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "45c0052c-523e-421b-b143-02be9ea5414f")
+	)
+	(gr_arc
+		(start 165.1381 59.0042)
+		(mid 165.676915 59.227385)
+		(end 165.9001 59.7662)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "6093885b-49a9-4e36-9f76-fff1295899a0")
+	)
+	(gr_line
+		(start 165.1381 97.1042)
+		(end 120.9167 97.1042)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "8363ecd4-ddc6-40dc-bc65-82dc0dfdba81")
+	)
+	(gr_arc
+		(start 120.9167 97.1042)
+		(mid 120.377885 96.881015)
+		(end 120.1547 96.3422)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "97c1da2c-42ef-4b35-b24e-a839ccd13807")
+	)
+	(gr_line
+		(start 165.9001 59.7662)
+		(end 165.9001 96.3422)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f30a4926-c264-4439-ad2e-930ab01e6c27")
 	)
 	(embedded_fonts no)
 )
