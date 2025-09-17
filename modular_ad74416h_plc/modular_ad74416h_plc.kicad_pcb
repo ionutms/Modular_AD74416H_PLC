@@ -3743,9 +3743,9 @@
 		)
 	)
 	(gr_arc
-		(start 120.1547 59.7662)
-		(mid 120.377885 59.227385)
-		(end 120.9167 59.0042)
+		(start 120.1547 97.9424)
+		(mid 120.377885 97.403585)
+		(end 120.9167 97.1804)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3754,18 +3754,18 @@
 		(uuid "0bdc6aa3-b96a-4794-ab0b-d2797d42d8b5")
 	)
 	(gr_line
-		(start 120.1547 96.3422)
-		(end 120.1547 59.7662)
+		(start 120.1547 98.9584)
+		(end 120.1547 97.9424)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(layer "Edge.Cuts")
 		(uuid "11f4bca5-8dcf-43cd-ac90-583930beee27")
 	)
 	(gr_line
-		(start 120.9167 59.0042)
-		(end 165.1381 59.0042)
+		(start 120.9167 97.1804)
+		(end 165.1381 97.1804)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3774,9 +3774,9 @@
 		(uuid "2ae9f347-be17-4fea-988d-2fbf5d8274b2")
 	)
 	(gr_arc
-		(start 165.9001 96.3422)
-		(mid 165.676915 96.881015)
-		(end 165.1381 97.1042)
+		(start 165.9001 98.9584)
+		(mid 165.676915 99.497215)
+		(end 165.1381 99.7204)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3785,9 +3785,9 @@
 		(uuid "45c0052c-523e-421b-b143-02be9ea5414f")
 	)
 	(gr_arc
-		(start 165.1381 59.0042)
-		(mid 165.676915 59.227385)
-		(end 165.9001 59.7662)
+		(start 165.1381 97.1804)
+		(mid 165.676915 97.403585)
+		(end 165.9001 97.9424)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3796,8 +3796,8 @@
 		(uuid "6093885b-49a9-4e36-9f76-fff1295899a0")
 	)
 	(gr_line
-		(start 165.1381 97.1042)
-		(end 120.9167 97.1042)
+		(start 165.1381 99.7204)
+		(end 120.9167 99.7204)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3806,9 +3806,9 @@
 		(uuid "8363ecd4-ddc6-40dc-bc65-82dc0dfdba81")
 	)
 	(gr_arc
-		(start 120.9167 97.1042)
-		(mid 120.377885 96.881015)
-		(end 120.1547 96.3422)
+		(start 120.9167 99.7204)
+		(mid 120.377885 99.497215)
+		(end 120.1547 98.9584)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -3817,11 +3817,11 @@
 		(uuid "97c1da2c-42ef-4b35-b24e-a839ccd13807")
 	)
 	(gr_line
-		(start 165.9001 59.7662)
-		(end 165.9001 96.3422)
+		(start 165.9001 97.9424)
+		(end 165.9001 98.9584)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(layer "Edge.Cuts")
 		(uuid "f30a4926-c264-4439-ad2e-930ab01e6c27")
