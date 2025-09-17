@@ -106,7 +106,9 @@ jobs:
           echo "side_view_rotate=\"0,0,0\"" >> $GITHUB_OUTPUT
           echo "side_view_pan=\"0,0,0\"" >> $GITHUB_OUTPUT
           echo "top_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
+          echo "top_view_pan=\"0,0,0\"" >> $GITHUB_OUTPUT
           echo "bottom_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
+          echo "bottom_view_pan=\"0,0,0\"" >> $GITHUB_OUTPUT
 
           
           # Extract parameters from config file if it exists
@@ -124,6 +126,12 @@ jobs:
             if [ ! -z "$TOP_VIEW_ZOOM_FACTOR" ]; then
               echo "top_view_zoom_factor=$TOP_VIEW_ZOOM_FACTOR" >> $GITHUB_OUTPUT
             fi
+
+            # Extract top view pan values - preserve quotes but trim whitespace
+            TOP_VIEW_PAN=$(grep 'top_view_pan:' .github/kicad-config.yml | sed 's/top_view_pan: *//' | tr -d '\n\r')
+            if [ ! -z "$TOP_VIEW_PAN" ]; then
+              echo "top_view_pan=$TOP_VIEW_PAN" >> $GITHUB_OUTPUT
+            fi
             
             # Extract bottom view parameters (using side view as default if not specified)
             BOTTOM_VIEW_ZOOM_FACTOR=$(grep 'bottom_view_zoom_factor:' .github/kicad-config.yml | sed 's/bottom_view_zoom_factor: *//' | tr -d '\n\r')
@@ -132,6 +140,12 @@ jobs:
             else
               # Default to side view parameters if not specified
               echo "bottom_view_zoom_factor=$SIDE_VIEW_ZOOM_FACTOR" >> $GITHUB_OUTPUT
+            fi
+
+            # Extract bottom view pan values - preserve quotes but trim whitespace
+            BOTTOM_VIEW_PAN=$(grep 'bottom_view_pan:' .github/kicad-config.yml | sed 's/bottom_view_pan: *//' | tr -d '\n\r')
+            if [ ! -z "$BOTTOM_VIEW_PAN" ]; then
+              echo "bottom_view_pan=$BOTTOM_VIEW_PAN" >> $GITHUB_OUTPUT
             fi
             
             # Extract rotate values - preserve quotes but trim whitespace
@@ -197,6 +211,7 @@ jobs:
                   -o "/kicad_project/$PROJECT_NAME/docs/pictures/2_${PROJECT_NAME}_top.png" \
                   --background transparent \
                   --quality high \
+                  --pan ${{ steps.kicad-config.outputs.top_view_pan }} \
                   --zoom ${{ steps.kicad-config.outputs.top_view_zoom_factor }}
               fi && \
 
@@ -218,6 +233,7 @@ jobs:
                   --background transparent \
                   --quality high \
                   --side bottom \
+                  --pan ${{ steps.kicad-config.outputs.bottom_view_pan }} \
                   --zoom ${{ steps.kicad-config.outputs.bottom_view_zoom_factor }}
               fi && \
 

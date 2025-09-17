@@ -1,5 +1,7 @@
 top_view_zoom_factor: 0.48
+top_view_pan: '0,-1,0'
 bottom_view_zoom_factor: 0.48
+bottom_view_pan: '0,-1,0'
 side_view_zoom_factor: 0.4
 side_view_rotate: '315,360,405'
 side_view_pan: '0,-1.2,0'
