@@ -155,6 +155,12 @@ The following images showcase the PCB design from different perspectives:
 ![Bottom View](modular_ad74416h_plc/docs/pictures/3_modular_ad74416h_plc_bottom.png)
 *Bottom View of the PCB*
 
+![Left View](modular_ad74416h_plc/docs/pictures/4_modular_ad74416h_plc_left.png)
+*Left View of the PCB*
+
+![Right View](modular_ad74416h_plc/docs/pictures/5_modular_ad74416h_plc_right.png)
+*Right View of the PCB*
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
