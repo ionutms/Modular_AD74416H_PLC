@@ -33,23 +33,23 @@ Key features include:
 
 ```
 modular_ad74416h_plc/
-├── modular_ad74416h_plc.kicad_pro      # Project configuration file
-├── modular_ad74416h_plc.kicad_sch      # Main schematic file
-├── modular_ad74416h_plc.kicad_pcb      # PCB layout file
-├── fp-lib-table                        # Footprint library table
-├── sym-lib-table                       # Symbol library table
-├── docs/                               # Documentation files
-│   ├── bom/                            # Bill of Materials
-│   │   └── modular_ad74416h_plc_ibom.html # Interactive BOM file
-│   ├── pictures/                       # Images and photos
+├── modular_ad74416h_plc.kicad_pro               # Project configuration file
+├── modular_ad74416h_plc.kicad_sch               # Main schematic file
+├── modular_ad74416h_plc.kicad_pcb               # PCB layout file
+├── fp-lib-table                                 # Footprint library table
+├── sym-lib-table                                # Symbol library table
+├── docs/                                        # Documentation files
+│   ├── bom/                                     # Bill of Materials
+│   │   └── modular_ad74416h_plc_ibom.html       # Interactive BOM file
+│   ├── pictures/                                # Images and photos
 │   │   ├── 1_modular_ad74416h_plc_side.png
 │   │   ├── 2_modular_ad74416h_plc_top.png
 │   │   ├── 3_modular_ad74416h_plc_bottom.png
 │   │   ├── 4_modular_ad74416h_plc_left.png
 │   │   └── 5_modular_ad74416h_plc_right.png
-│   └── schematics/                     # Schematic PDF exports
+│   └── schematics/                              # Schematic PDF exports
 │       └── modular_ad74416h_plc_schematics.pdf
-└── KiCAD_Symbols_Generator/            # Submodule for symbol generation from CSV data
+└── KiCAD_Symbols_Generator/                     # Submodule for symbol generation from CSV data
 ```
 
 ## Project Features
