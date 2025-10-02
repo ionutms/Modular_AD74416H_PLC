@@ -1477,7 +1477,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 10.16)
+				(xyz 0 0 6.985)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3383,7 +3383,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 33.02)
+				(xyz 0 0 23.495)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -5159,7 +5159,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 21.59)
+				(xyz 0 0 15.24)
 			)
 			(scale
 				(xyz 1 1 1)
