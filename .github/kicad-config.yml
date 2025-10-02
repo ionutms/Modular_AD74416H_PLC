@@ -1,11 +1,11 @@
-top_view_zoom_factor: 0.36
+top_view_zoom_factor: 0.16
 top_view_pan: '0,0,0'
-bottom_view_zoom_factor: 0.36
+bottom_view_zoom_factor: 0.16
 bottom_view_pan: '0,0,0'
-side_view_zoom_factor: 0.32
+side_view_zoom_factor: 0.12
 side_view_rotate: '315,360,405'
 side_view_pan: '0,-4,0'
-left_view_zoom_factor: 0.6
+left_view_zoom_factor: 0.4
 left_view_pan: '0,-6,0'
-right_view_zoom_factor: 0.6
+right_view_zoom_factor: 0.4
 right_view_pan: '0,-6,0'
