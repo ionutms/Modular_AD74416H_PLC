@@ -607,7 +607,7 @@
 			(at 0 -0.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "175bd7de-3325-448e-91a3-d2137fa39120")
+			(uuid "1c9f2ad9-2c95-4aa6-bf0d-c5c781d5b6e7")
 			(effects
 				(font
 					(size 1 1)
@@ -619,7 +619,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "6082a52a-9e31-4263-8ed2-77bd27f761ec")
+			(uuid "6dbcf2f8-a9cd-4938-9ab6-9a5127803854")
 			(effects
 				(font
 					(size 1 1)
@@ -632,7 +632,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b9387f63-e5ab-4b05-8a6d-0df1bd138260")
+			(uuid "7b2904ca-0026-4e42-905d-ef8d9fb156a4")
 			(effects
 				(font
 					(size 1 1)
@@ -645,7 +645,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8002c853-04b2-433a-94ce-492718892ab9")
+			(uuid "48ed06c6-db64-4b5c-8b46-155bcb58dc4e")
 			(effects
 				(font
 					(size 1 1)
@@ -1477,7 +1477,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 6.985)
+				(xyz 0 0 4.318)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2508,12 +2508,12 @@
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "98ee40ef-5ab3-401e-836d-1b144034789f")
-		(at 193.8274 96.012)
+		(at 193.8274 95.90786)
 		(property "Reference" "U4"
 			(at 0 -0.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "31400f6b-acf4-4907-872b-e0aff55d06ea")
+			(uuid "4f831f09-262e-4fef-8f1f-c6eaa625224a")
 			(effects
 				(font
 					(size 1 1)
@@ -2525,7 +2525,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "b1930cba-fcc6-4c47-8194-360048376503")
+			(uuid "ac0971d4-7f4d-4086-aff1-e75ca4b02203")
 			(effects
 				(font
 					(size 1 1)
@@ -2538,7 +2538,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b1b03f6-695d-48b6-bb48-5623be572f81")
+			(uuid "e3f56b23-8e7a-4926-b485-1c96eaac5407")
 			(effects
 				(font
 					(size 1 1)
@@ -2551,7 +2551,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aebf9025-9833-44fb-8326-a7c07288f3ff")
+			(uuid "d1362e6e-c010-46a8-a024-fea5e081e4db")
 			(effects
 				(font
 					(size 1 1)
@@ -3383,7 +3383,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 23.495)
+				(xyz 0 0 15.748)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3401,7 +3401,7 @@
 			(at 0 -0.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "75dbe186-8174-4258-bb1a-7b0f49fa5da7")
+			(uuid "56c0c288-2845-499a-836a-6aa774820f7f")
 			(effects
 				(font
 					(size 1 1)
@@ -3413,7 +3413,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "85b7c796-507c-4a79-877c-1fbb6cd646d5")
+			(uuid "7f057a18-1e19-4cee-985d-9bee636a6dce")
 			(effects
 				(font
 					(size 1 1)
@@ -3426,7 +3426,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "63ff8474-2d8e-4b0f-aa98-b8b8e312b81d")
+			(uuid "c921e07b-b0b8-4742-a8ea-1a48a3f93326")
 			(effects
 				(font
 					(size 1 1)
@@ -3439,7 +3439,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ad0914c7-67a4-432a-8219-d096c18d913f")
+			(uuid "87f947c8-6650-4018-97f3-b4319e805933")
 			(effects
 				(font
 					(size 1 1)
@@ -4284,12 +4284,12 @@
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "e990606a-8ecd-41cf-84d3-f078c1cbd0e7")
-		(at 193.8274 113.792)
+		(at 193.8274 113.68786)
 		(property "Reference" "U3"
 			(at 0 -0.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "74ff7ce4-936c-43c4-9059-d149adb5f9dc")
+			(uuid "f010f0b3-9e0a-4b42-a6b4-f4e43e7700d4")
 			(effects
 				(font
 					(size 1 1)
@@ -4301,7 +4301,7 @@
 			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "cd337a54-ce4b-4570-a6df-b11b4f24f611")
+			(uuid "03983d97-e2e2-442e-964c-6581bdf4cab1")
 			(effects
 				(font
 					(size 1 1)
@@ -4314,7 +4314,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b86c396-052e-4600-bad2-824f7aeae07e")
+			(uuid "389ce96c-87ce-488f-82c6-ff72772af866")
 			(effects
 				(font
 					(size 1 1)
@@ -4327,7 +4327,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "46c4309b-ee16-4106-b050-781a7a3c7fb2")
+			(uuid "b8a4e018-be12-485f-891b-42441b8883eb")
 			(effects
 				(font
 					(size 1 1)
@@ -5159,7 +5159,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 15.24)
+				(xyz 0 0 10.033)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -5172,7 +5172,7 @@
 	(footprint "modules_footprints:minimal_adpl76030"
 		(layer "F.Cu")
 		(uuid "ef8552bb-f487-440b-b71c-82e764b78c0f")
-		(at 210.3501 207.2259 -90)
+		(at 210.3374 207.2259 -90)
 		(property "Reference" "U5"
 			(at 0 0 270)
 			(unlocked yes)
