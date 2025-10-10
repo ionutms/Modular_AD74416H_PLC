@@ -120,7 +120,7 @@
 	(footprint "modules_footprints:minimal_adp1074"
 		(layer "F.Cu")
 		(uuid "0c3546e0-9dcd-4cb4-bf08-7dcde0182f58")
-		(at 193.8274 206.0194)
+		(at 193.8274 190.64986)
 		(property "Reference" "MOD2"
 			(at 0 0 0)
 			(unlocked yes)
@@ -602,7 +602,7 @@
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "30fe0ebc-158e-42fc-a531-d1e5eb359ded")
-		(at 193.8274 140.3604)
+		(at 193.8274 124.99086)
 		(property "Reference" "U2"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -1331,7 +1331,7 @@
 	(footprint "modules_footprints:ad74416h_power_interface_module"
 		(layer "F.Cu")
 		(uuid "75492c20-385a-435d-b061-7bed598f5197")
-		(at 193.8274 201.5744)
+		(at 193.8274 186.20486)
 		(property "Reference" "MOD1"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2221,7 +2221,7 @@
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "98ee40ef-5ab3-401e-836d-1b144034789f")
-		(at 193.8274 140.3604)
+		(at 193.8274 124.99086)
 		(property "Reference" "U4"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2950,7 +2950,7 @@
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "9da10669-e4e2-4a66-825d-35775c7b05cb")
-		(at 193.8274 140.3604)
+		(at 193.8274 124.99086)
 		(property "Reference" "U1"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -3679,7 +3679,7 @@
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "e990606a-8ecd-41cf-84d3-f078c1cbd0e7")
-		(at 193.8274 140.3604)
+		(at 193.8274 124.99086)
 		(property "Reference" "U3"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -4408,7 +4408,7 @@
 	(footprint "modules_footprints:minimal_adpl76030"
 		(layer "F.Cu")
 		(uuid "ef8552bb-f487-440b-b71c-82e764b78c0f")
-		(at 210.3374 205.5749 -90)
+		(at 210.3374 190.20536 -90)
 		(property "Reference" "U5"
 			(at 0 0 270)
 			(unlocked yes)
@@ -4895,6 +4895,7 @@
 			(width 0.05)
 			(type default)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "0bdc6aa3-b96a-4794-ab0b-d2797d42d8b5")
 	)
@@ -4905,6 +4906,7 @@
 			(width 0.05)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "11f4bca5-8dcf-43cd-ac90-583930beee27")
 	)
@@ -4915,6 +4917,7 @@
 			(width 0.05)
 			(type default)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "2ae9f347-be17-4fea-988d-2fbf5d8274b2")
 	)
@@ -4926,6 +4929,7 @@
 			(width 0.05)
 			(type default)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "45c0052c-523e-421b-b143-02be9ea5414f")
 	)
@@ -4937,6 +4941,7 @@
 			(width 0.05)
 			(type default)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "6093885b-49a9-4e36-9f76-fff1295899a0")
 	)
@@ -4947,6 +4952,7 @@
 			(width 0.05)
 			(type default)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "8363ecd4-ddc6-40dc-bc65-82dc0dfdba81")
 	)
@@ -4958,6 +4964,7 @@
 			(width 0.05)
 			(type default)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "97c1da2c-42ef-4b35-b24e-a839ccd13807")
 	)
@@ -4968,6 +4975,7 @@
 			(width 0.05)
 			(type solid)
 		)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "f30a4926-c264-4439-ad2e-930ab01e6c27")
 	)
