@@ -120,7 +120,7 @@
 	(footprint "modules_footprints:minimal_adp1074"
 		(layer "F.Cu")
 		(uuid "0c3546e0-9dcd-4cb4-bf08-7dcde0182f58")
-		(at 193.8274 187.09386)
+		(at 193.8274 187.85586)
 		(property "Reference" "MOD2"
 			(at 0 0 0)
 			(unlocked yes)
@@ -589,7 +589,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_adp1074.step"
 			(offset
-				(xyz 0 0 18.288)
+				(xyz 0 0 30.734)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1318,7 +1318,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 10.16)
+				(xyz 0 0 10.922)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1331,7 +1331,7 @@
 	(footprint "modules_footprints:ad74416h_power_interface_module"
 		(layer "F.Cu")
 		(uuid "75492c20-385a-435d-b061-7bed598f5197")
-		(at 193.8274 184.55386)
+		(at 193.8274 185.31586)
 		(property "Reference" "MOD1"
 			(at 0 -0.5 0)
 			(unlocked yes)
@@ -2197,13 +2197,179 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module.step"
 			(offset
-				(xyz 0 0 4.445)
+				(xyz 0 0 17.018)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
 				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "modules_footprints:minimal_ad74416h_stack_adapter"
+		(layer "F.Cu")
+		(uuid "7d2e3e3a-8dc9-4a8c-96cc-ceb3dc3a5e2e")
+		(at 193.8274 154.45486)
+		(property "Reference" "U6"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "76a8c4a7-24cf-47cd-980d-3dc00d723673")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "2e75a378-2f32-42a4-8ea4-ee3233201caf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a9f720e-c63d-46c1-bd70-ed5c94906d27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a7428e5-3af1-4634-bbe8-6ae42ea8bf70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/51e2ce45-c4aa-4845-8d82-bcd7a965a4c8")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(fp_line
+			(start -22.86 22.225)
+			(end -22.86 -22.225)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "72003ea6-8dc3-47f6-b8fc-75ec0b25fc4b")
+		)
+		(fp_line
+			(start -22.225 -22.86)
+			(end 22.225 -22.86)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "0de18a66-a8b6-45c5-8ffc-19f6ff3b63f8")
+		)
+		(fp_line
+			(start 22.225 22.86)
+			(end -22.225 22.86)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "69f9e0b7-a1ca-4b64-bde4-9aa5fd16ec37")
+		)
+		(fp_line
+			(start 22.86 -22.225)
+			(end 22.86 22.225)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "71cd8dfa-305a-4d79-8398-2a9e9fc68086")
+		)
+		(fp_arc
+			(start -22.86 -22.225)
+			(mid -22.674013 -22.674013)
+			(end -22.225 -22.86)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "432eb5b5-5c24-4225-b7d2-ec827dc59caa")
+		)
+		(fp_arc
+			(start -22.225 22.86)
+			(mid -22.674013 22.674013)
+			(end -22.86 22.225)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "b6ccdc57-8bd0-4b4a-ab19-54702811385f")
+		)
+		(fp_arc
+			(start 22.225 -22.86)
+			(mid 22.674013 -22.674013)
+			(end 22.86 -22.225)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "412e4e8e-23e3-4508-89cb-34c1a31a761f")
+		)
+		(fp_arc
+			(start 22.86 22.225)
+			(mid 22.674013 22.674013)
+			(end 22.225 22.86)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "aed12123-91cc-44d8-8369-0b04151b3215")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "da5d6315-1ee4-48c0-b353-418af24040a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h_stack_adapter.step"
+			(offset
+				(xyz 0 0 20.3708)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -2926,7 +3092,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 33.02)
+				(xyz 0 0 35.306)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -4384,7 +4550,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 21.59)
+				(xyz 0 0 23.114)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -4397,7 +4563,7 @@
 	(footprint "modules_footprints:minimal_adpl76030"
 		(layer "F.Cu")
 		(uuid "ef8552bb-f487-440b-b71c-82e764b78c0f")
-		(at 210.3374 186.64936 -90)
+		(at 210.3374 187.41136 -90)
 		(property "Reference" "U5"
 			(at 0 0 270)
 			(unlocked yes)
@@ -4866,7 +5032,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_adpl76030.step"
 			(offset
-				(xyz 0 0 12.573)
+				(xyz 0 0 25.019)
 			)
 			(scale
 				(xyz 1 1 1)
