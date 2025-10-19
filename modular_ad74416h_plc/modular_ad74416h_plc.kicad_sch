@@ -5,7 +5,7 @@
 	(uuid "947a17bd-6931-4ad8-bf27-70104debc844")
 	(paper "A4")
 	(lib_symbols
-		(symbol "UNITED_MODULES_DATA_BASE:AD74416H_POWER_INTERFACE_MODULE"
+		(symbol "UNITED_MODULES_DATA_BASE:AD74416H_POWER_INTERFACE_MODULE_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -26,7 +26,7 @@
 					)
 				)
 			)
-			(property "Footprint" "modules_footprints:ad74416h_power_interface_module"
+			(property "Footprint" "modules_footprints:ad74416h_power_interface_module_v2"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -54,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AD74416H_POWER_INTERFACE_MODULE_0_1"
+			(symbol "AD74416H_POWER_INTERFACE_MODULE_v2_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -133,11 +133,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H_STACK_ADAPTER"
+		(symbol "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H_STACK_ADAPTER_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "MOD"
 				(at 5.08 7.62 0)
 				(effects
 					(font
@@ -154,7 +154,7 @@
 					)
 				)
 			)
-			(property "Footprint" "modules_footprints:minimal_ad74416h_stack_adapter"
+			(property "Footprint" "modules_footprints:minimal_ad74416h_stack_adapter_v2"
 				(at 5.08 -7.62 0)
 				(effects
 					(font
@@ -182,7 +182,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MINIMAL_AD74416H_STACK_ADAPTER_0_1"
+			(symbol "MINIMAL_AD74416H_STACK_ADAPTER_v2_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -197,7 +197,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UNITED_MODULES_DATA_BASE:MINIMAL_ADP1074"
+		(symbol "UNITED_MODULES_DATA_BASE:MINIMAL_ADP1074_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -218,7 +218,7 @@
 					)
 				)
 			)
-			(property "Footprint" "modules_footprints:minimal_adp1074"
+			(property "Footprint" "modules_footprints:minimal_adp1074_v2"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -246,7 +246,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MINIMAL_ADP1074_0_1"
+			(symbol "MINIMAL_ADP1074_v2_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -261,11 +261,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UNITED_MODULES_DATA_BASE:MINIMAL_ADPL76030"
+		(symbol "UNITED_MODULES_DATA_BASE:MINIMAL_ADPL76030_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "MOD"
 				(at 5.08 7.62 0)
 				(effects
 					(font
@@ -282,7 +282,7 @@
 					)
 				)
 			)
-			(property "Footprint" "modules_footprints:minimal_adpl76030"
+			(property "Footprint" "modules_footprints:minimal_adpl76030_v2"
 				(at 5.08 -7.62 0)
 				(effects
 					(font
@@ -310,7 +310,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MINIMAL_ADPL76030_0_1"
+			(symbol "MINIMAL_ADPL76030_v2_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -327,7 +327,7 @@
 		)
 	)
 	(symbol
-		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H_STACK_ADAPTER")
+		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H_STACK_ADAPTER_v2")
 		(at 195.58 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -336,7 +336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51e2ce45-c4aa-4845-8d82-bcd7a965a4c8")
-		(property "Reference" "U6"
+		(property "Reference" "MOD6"
 			(at 201.93 118.1099 0)
 			(effects
 				(font
@@ -354,7 +354,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "modules_footprints:minimal_ad74416h_stack_adapter"
+		(property "Footprint" "modules_footprints:minimal_ad74416h_stack_adapter_v2"
 			(at 200.66 127 0)
 			(effects
 				(font
@@ -385,7 +385,7 @@
 		(instances
 			(project ""
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "U6")
+					(reference "MOD6")
 					(unit 1)
 				)
 			)
@@ -457,7 +457,7 @@
 		)
 	)
 	(symbol
-		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_ADPL76030")
+		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_ADPL76030_v2")
 		(at 213.36 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -466,7 +466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7cbc74f-a901-4ffe-9425-4d760395ae9c")
-		(property "Reference" "U5"
+		(property "Reference" "MOD5"
 			(at 219.71 135.8899 0)
 			(effects
 				(font
@@ -484,7 +484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "modules_footprints:minimal_adpl76030"
+		(property "Footprint" "modules_footprints:minimal_adpl76030_v2"
 			(at 218.44 144.78 0)
 			(effects
 				(font
@@ -515,14 +515,14 @@
 		(instances
 			(project ""
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "U5")
+					(reference "MOD5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "UNITED_MODULES_DATA_BASE:AD74416H_POWER_INTERFACE_MODULE")
+		(lib_id "UNITED_MODULES_DATA_BASE:AD74416H_POWER_INTERFACE_MODULE_v2")
 		(at 142.24 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -549,7 +549,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "modules_footprints:ad74416h_power_interface_module"
+		(property "Footprint" "modules_footprints:ad74416h_power_interface_module_v2"
 			(at 142.24 109.22 0)
 			(effects
 				(font
@@ -717,7 +717,7 @@
 		)
 	)
 	(symbol
-		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_ADP1074")
+		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_ADP1074_v2")
 		(at 213.36 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -744,7 +744,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "modules_footprints:minimal_adp1074"
+		(property "Footprint" "modules_footprints:minimal_adp1074_v2"
 			(at 213.36 127 0)
 			(effects
 				(font
