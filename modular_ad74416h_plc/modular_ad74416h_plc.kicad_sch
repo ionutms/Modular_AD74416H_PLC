@@ -72,6 +72,86 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203400"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "M"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "mechanical_parts:2203400"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "UCS HAC 9005 - Height adapter"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "M_2203400_0_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy 0 0) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.08)
+					(mid -3.5921 -3.5921)
+					(end -5.08 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -474,6 +554,73 @@
 		)
 	)
 	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203400")
+		(at 96.52 129.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dcccfb5-a0c8-4cef-b23a-4051d03bd11d")
+		(property "Reference" "M8"
+			(at 102.87 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 102.87 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203400"
+			(at 96.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 96.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 96.52 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "modular_ad74416h_plc"
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2")
 		(at 60.96 165.1 0)
 		(unit 1)
@@ -675,6 +822,73 @@
 		)
 	)
 	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203400")
+		(at 55.88 129.54 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "425df76a-3454-42f9-80be-ad88b08a07fb")
+		(property "Reference" "M9"
+			(at 57.15 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 57.15 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203400"
+			(at 48.26 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 45.72 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 43.18 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "modular_ad74416h_plc"
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2")
 		(at 91.44 165.1 90)
 		(unit 1)
@@ -736,6 +950,73 @@
 			(project "modular_ad74416h_plc"
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
 					(reference "M3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203400")
+		(at 96.52 170.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "504a44ca-52ab-488e-9f9d-896999f166a4")
+		(property "Reference" "M7"
+			(at 102.87 171.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 102.87 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203400"
+			(at 104.14 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 106.68 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 109.22 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "modular_ad74416h_plc"
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M7")
 					(unit 1)
 				)
 			)
@@ -868,6 +1149,73 @@
 			(project ""
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
 					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203400")
+		(at 55.88 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e6941f9-6ca5-439d-81d9-0b0a65dde687")
+		(property "Reference" "M6"
+			(at 57.15 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 57.15 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203400"
+			(at 55.88 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 55.88 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 55.88 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M6")
 					(unit 1)
 				)
 			)

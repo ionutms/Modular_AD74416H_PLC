@@ -120,7 +120,7 @@
 	(footprint "mechanical_parts:2203404_v2"
 		(layer "F.Cu")
 		(uuid "02b8cf11-8ae0-498b-a8e6-676ac6f6e4e6")
-		(at 229.0382 82.1872 180)
+		(at 229.0274 82.198 180)
 		(descr "UCS CCD 5018 - Corner inlay")
 		(property "Reference" "M3"
 			(at 0 -0.5 180)
@@ -465,6 +465,300 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+	)
+	(footprint "mechanical_parts:2203400"
+		(layer "F.Cu")
+		(uuid "27f1c170-4420-4bd5-b210-1abc9b68cc13")
+		(at 158.627401 82.198001 -90)
+		(descr "UCS HAC 9005 - Height adapter")
+		(property "Reference" "M7"
+			(at 0 -0.5 270)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "96d3c504-b585-4ca2-a042-f18156e15ce1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "186fed7e-5d91-4da0-873b-3ae6957eb588")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97cb2e45-d477-42a4-9e7d-0917f2537af4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a8eb6552-a1f7-4643-a413-200491312afb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/504a44ca-52ab-488e-9f9d-896999f166a4")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "9daef9b2-8183-4008-b403-d8245c6ef381")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -7.7978)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "f455a41c-c4fa-4de2-aea3-9684f4f6b71c")
+		)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "8c0c66de-a86b-4a24-9bc8-c4f3d1cd744d")
+		)
+		(fp_line
+			(start 7.7978 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "ff426d17-0692-4dbc-bd23-0e389597418e")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "3748888a-9a5f-4185-9ecd-6707e728c8f4")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "4a8879e9-fd9a-4d70-945b-c076eca486c4")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "647c5b2e-253a-485e-a77c-09fd5b574fff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "mechanical_parts:2203400"
+		(layer "F.Cu")
+		(uuid "2a611fcf-1826-4113-8ea9-ddef057bd9ab")
+		(at 229.0382 190.597999 90)
+		(descr "UCS HAC 9005 - Height adapter")
+		(property "Reference" "M9"
+			(at 0 -0.5 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "44d90d71-18cf-4818-80b8-af63353a089e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "7534a7b7-59d4-4cc0-b95f-b1d1cfa28e91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7016aab-3284-4211-a818-8e3f59ace460")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43540c6f-1433-4630-8469-bb25ca5d87f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/425df76a-3454-42f9-80be-ad88b08a07fb")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 7.7978 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "93fad671-18a5-4a7f-b785-c605bf15a18a")
+		)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "c06b8d1c-4331-471b-ac11-48b0c50ba204")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -7.7978)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "f6306c28-a1a5-412e-b8c7-356670c18af8")
+		)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "642383d5-0158-46cc-b5c8-bda1d1769926")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "81d0100a-60f2-4aca-a5c8-0d09d106aae2")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "354801a0-396f-49cf-8ff6-d511b9324b1f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "aa804568-336e-46eb-b5dc-e847763439f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -1446,6 +1740,523 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+	)
+	(footprint "mechanical_parts:2203400"
+		(layer "F.Cu")
+		(uuid "3dfeae58-c91e-4d88-b73f-c59bfe4abfa2")
+		(at 229.0274 82.198 180)
+		(descr "UCS HAC 9005 - Height adapter")
+		(property "Reference" "M6"
+			(at 0 -0.5 180)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c2d8a47f-3233-4f19-977f-0355cf82e44c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "3dc863cd-c3a3-4905-9441-34600a531265")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "184c835d-293f-4713-97ca-1b1ca759543b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3f9f0074-412b-4623-9a16-1049258ee6f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/7e6941f9-6ca5-439d-81d9-0b0a65dde687")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -7.7978)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "b6c1b909-42c0-46e8-aa86-5cd3c9685287")
+		)
+		(fp_line
+			(start 7.7978 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "1cc4cc0e-b88f-45c9-9097-6602de9dca6b")
+		)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "6a3cf064-9884-4aa8-bf9d-a687944a9499")
+		)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "c4f9d91c-f502-4a45-a874-db9077c1103a")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "2b5f2712-6d9f-4a05-ad81-c2d8fc2b5777")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "67113a9d-f5dc-4f34-9fb3-7da5217740c7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5f123953-b4e0-45a0-a5c9-45a84f24dfb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
+	(footprint "mechanical_parts:2203350"
+		(layer "F.Cu")
+		(uuid "4ff58766-d2a2-4b1b-a87d-6ef488190e4c")
+		(at 193.8274 136.398)
+		(descr "UCS HH 125-87 9005 - Housing half shell")
+		(property "Reference" "M10"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "b55b2533-42cd-400c-aa05-d57f6f8b4d74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "cc78dd7e-1d76-4170-83bf-2c715b8dab5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8025199?response-content-disposition=inline;%20filename%3D%22pxc_2203350_00_02_UCS-HH-125-87-9005_2D.pdf%22&Expires=1760989045&Signature=yE5~e9oEp1czmAuNjEVI-zMCk115UdZsJSv~rrHj0mJAaEc55~bR20bW9JJOB3hki3HOREKBknujH~8gYOUKHzLpSGgETtHOQerG8jWvvCgEOtBdmOWxPCFsOz9Wsha5f2~VPSQJvuGHCf2CTsN5w1iZpHUNsgk-mkW2p9pzyOLKxVWYhtjSbQv3gEOsVOjFHlOlmTX7rqb6sJSqriLur8mA9m3Tjg-Z30FHvQ1KxAkSK4hrzVgTKxESnhz77NCWnp-s970KOF79zwJtK4mF8zDCIv5i5t6kHDL5A9xxqz5SxQzMk3O-D3HhNnTfdPWE6WLROkbUQOZ4tbjTyLeyWA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e2a3529-7de4-4899-805a-902d9a1ccd0f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS HH 125-87 9005 - Housing half shell"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78dfec02-0bb3-4d65-9aff-9c3f3bd89eb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/fc2c676b-6505-418b-b258-4a8989658457")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -43.5 54.2)
+			(end -43.5 -54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "8283ef68-5fab-48b8-b763-44f461cbc99e")
+		)
+		(fp_line
+			(start -35.2 -62.5)
+			(end 35.2 -62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "faf2d516-3d32-42cc-b823-f949e4b38988")
+		)
+		(fp_line
+			(start 35.2 62.5)
+			(end -35.2 62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "c4caf9b7-a82e-4b1a-a23b-0ab5eb612932")
+		)
+		(fp_line
+			(start 43.5 -54.2)
+			(end 43.5 54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "f1c27f78-9c32-4093-92bd-37d5669d188e")
+		)
+		(fp_rect
+			(start -31.35 -50.35)
+			(end 31.35 50.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "c8a27126-1fa6-4971-b66e-3cb26b7b1d8f")
+		)
+		(fp_arc
+			(start -43.5 -54.2)
+			(mid -41.068986 -60.068986)
+			(end -35.2 -62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "4c136212-ad99-48b7-a369-f9c1bd8e6740")
+		)
+		(fp_arc
+			(start -35.2 62.5)
+			(mid -41.068986 60.068986)
+			(end -43.5 54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "5898a5d3-61d0-447e-8c9d-a75249d28af9")
+		)
+		(fp_arc
+			(start 35.2 -62.5)
+			(mid 41.068986 -60.068986)
+			(end 43.5 -54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "f4c22209-070c-47dc-8b70-7a54f2f058fd")
+		)
+		(fp_arc
+			(start 43.5 54.2)
+			(mid 41.068986 60.068986)
+			(end 35.2 62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "e27642b7-473b-4d5c-8b67-886e4b3a7583")
+		)
+		(fp_circle
+			(center -35.199999 54.207201)
+			(end -33.699999 54.207201)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "22abb7be-a05e-46ea-bf33-8a48001cb986")
+		)
+		(fp_circle
+			(center -35.198 -54.2)
+			(end -33.698 -54.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "e7c12341-1602-49a9-bb44-a334c29b4463")
+		)
+		(fp_circle
+			(center 35.2108 -54.2108)
+			(end 36.7108 -54.2108)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "cd22f8aa-0e2e-4ff1-ad79-76376362fad5")
+		)
+		(fp_circle
+			(center 35.2108 54.199999)
+			(end 36.7108 54.199999)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "0aa428eb-fb9c-45d9-a437-4a681895e363")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "3f83f7fe-3648-48cc-99ce-760aa779dcfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203350.step"
+			(offset
+				(xyz 0 0 52.197)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
+	)
+	(footprint "mechanical_parts:2203400"
+		(layer "F.Cu")
+		(uuid "6e40a081-0e92-4799-981c-b5cd1490c4e2")
+		(at 158.627401 190.597999)
+		(descr "UCS HAC 9005 - Height adapter")
+		(property "Reference" "M8"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e36fe07f-778f-48dc-a669-61a92715ebf1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "4a840420-5edb-451a-9151-222d57be8725")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993825?response-content-disposition=inline;%20filename%3D%22pxc_2203400_00_03_UCS-HAC-9005_2D.pdf%22&Expires=1761000568&Signature=QdCILgdy85DjHTcJbogKXfwtTsGt4aO0f0y~AVyDfpAVHJP5c6j9Dvb96o1mvPUME51CoKNFSddrorxGNKlMsuWhnIdetbfNuDiTBhos-oUf-K0TUTZS3yYvfGD6wZuMIXpUj87SRbGLaOQ~NiKEHo8CsZ-xHcQuGsg-CGyIjgFmjUdpb3zb8JOBO~gUbo0FMF5hw-h1gHKIbEyvrPGHZCLEFFd9apo7qaidQRY-PPFCqTZVulTM0qW4qXy4GrqU7aMu3byth4TbHBD4Np~l4gddiUWlCE2MfnscsgSgEOlZ29L4ExpHVVgXYgXk3hWOSb0cBHFybJHQ8nqzCrbFBQ__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b615f90b-5af3-41b6-960a-f1505a6a9df0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS HAC 9005 - Height adapter"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "394286d8-ecad-4a11-b6d1-6a4868c6a5db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/0dcccfb5-a0c8-4cef-b23a-4051d03bd11d")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "58a06822-2d92-46fb-a634-e9e9d16d169d")
+		)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "560de581-9827-4531-a80c-68083e1fbb49")
+		)
+		(fp_line
+			(start 7.7978 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "ab91d3ef-2cec-4d0c-ab07-93c704242bd7")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -7.7978)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "4655c72b-656c-457e-95b9-e87155f8e2b1")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "cbfebb48-6f88-4686-9ad8-4e06661f8801")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "c1b281cc-c3c8-480f-afcf-1726a75df27d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "10249bb6-b68c-4900-abe8-6b781399be48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
