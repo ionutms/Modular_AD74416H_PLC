@@ -1269,7 +1269,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "66042e58-c98c-4bdd-8f5c-873326411ca7")
+			(uuid "f184cb2c-176a-4eb8-89d0-de260ada3d53")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.54 0)
@@ -1288,7 +1288,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module.step"
 			(offset
-				(xyz 0 0 19.05)
+				(xyz 0 0 19.685)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -4056,10 +4056,233 @@
 			)
 		)
 	)
+	(footprint "mechanical_parts:2203350"
+		(layer "F.Cu")
+		(uuid "f495f6fc-74d0-4b10-b862-d86b5a43e0e4")
+		(at 193.8274 123.444)
+		(descr "UCS HH 125-87 9005 - Housing half shell")
+		(property "Reference" "M1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "95b4d89f-0287-4482-acd8-9d53ed4987b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "2a1e5c33-c195-40f7-8108-93fdf39ca0a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8025199?response-content-disposition=inline;%20filename%3D%22pxc_2203350_00_02_UCS-HH-125-87-9005_2D.pdf%22&Expires=1760989045&Signature=yE5~e9oEp1czmAuNjEVI-zMCk115UdZsJSv~rrHj0mJAaEc55~bR20bW9JJOB3hki3HOREKBknujH~8gYOUKHzLpSGgETtHOQerG8jWvvCgEOtBdmOWxPCFsOz9Wsha5f2~VPSQJvuGHCf2CTsN5w1iZpHUNsgk-mkW2p9pzyOLKxVWYhtjSbQv3gEOsVOjFHlOlmTX7rqb6sJSqriLur8mA9m3Tjg-Z30FHvQ1KxAkSK4hrzVgTKxESnhz77NCWnp-s970KOF79zwJtK4mF8zDCIv5i5t6kHDL5A9xxqz5SxQzMk3O-D3HhNnTfdPWE6WLROkbUQOZ4tbjTyLeyWA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a68ad66e-58e5-4c60-96ed-6b58aa779eb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS HH 125-87 9005 - Housing half shell"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aed79574-101c-46f0-825a-125198997d7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/7145f48f-a64a-4180-bd2f-cb0ba00224e9")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -43.5 54.2)
+			(end -43.5 -54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "1300a3db-c5fe-428d-b76a-636eb1ddefc7")
+		)
+		(fp_line
+			(start -35.2 -62.5)
+			(end 35.2 -62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "ee5faad2-56d1-493b-aac3-ba0127f0f713")
+		)
+		(fp_line
+			(start 35.2 62.5)
+			(end -35.2 62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "1e31d1c7-6980-48ef-a80f-eeca4e07a90c")
+		)
+		(fp_line
+			(start 43.5 -54.2)
+			(end 43.5 54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "8981d77e-d296-4efe-88f0-faa66e623c75")
+		)
+		(fp_rect
+			(start -31.35 -50.35)
+			(end 31.35 50.35)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "ecf49de3-1a72-41b9-8f2b-33c58dccf869")
+		)
+		(fp_arc
+			(start -43.5 -54.2)
+			(mid -41.068986 -60.068986)
+			(end -35.2 -62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "bccc934a-e0d9-4bd6-b70d-76f62b01c0d5")
+		)
+		(fp_arc
+			(start -35.2 62.5)
+			(mid -41.068986 60.068986)
+			(end -43.5 54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "81f35fd4-f66b-434c-b14a-325b8474b02b")
+		)
+		(fp_arc
+			(start 35.2 -62.5)
+			(mid 41.068986 -60.068986)
+			(end 43.5 -54.2)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "59319b04-8a5c-4ee0-bce5-b02be83107e0")
+		)
+		(fp_arc
+			(start 43.5 54.2)
+			(mid 41.068986 60.068986)
+			(end 35.2 62.5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "98c6f9d2-4d58-4210-9371-c70a3e1e052d")
+		)
+		(fp_circle
+			(center -35.199999 54.207201)
+			(end -33.699999 54.207201)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "f85d215f-710d-41ed-a557-29cd26aa970d")
+		)
+		(fp_circle
+			(center -35.198 -54.2)
+			(end -33.698 -54.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "487cba79-bcf2-476f-b1dc-543a42508ae4")
+		)
+		(fp_circle
+			(center 35.2108 -54.2108)
+			(end 36.7108 -54.2108)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "d8f7ac8a-ec8f-40d4-9dea-ee5816517509")
+		)
+		(fp_circle
+			(center 35.2108 54.199999)
+			(end 36.7108 54.199999)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "9f7171df-0971-47ca-8806-43bb91d7ec42")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "6101d834-fc0a-4a98-b830-a1266617d7d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203350.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(gr_arc
-		(start 170.9547 138.57986)
-		(mid 171.177899 138.04107)
-		(end 171.7167 137.81786)
+		(start 170.9547 134.76986)
+		(mid 171.177899 134.23107)
+		(end 171.7167 134.00786)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4068,8 +4291,8 @@
 		(uuid "0bdc6aa3-b96a-4794-ab0b-d2797d42d8b5")
 	)
 	(gr_line
-		(start 170.9547 139.59586)
-		(end 170.9547 138.57986)
+		(start 170.9547 135.78586)
+		(end 170.9547 134.76986)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -4078,8 +4301,8 @@
 		(uuid "11f4bca5-8dcf-43cd-ac90-583930beee27")
 	)
 	(gr_line
-		(start 171.7167 137.81786)
-		(end 215.9381 137.81786)
+		(start 171.7167 134.00786)
+		(end 215.9381 134.00786)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4088,9 +4311,9 @@
 		(uuid "2ae9f347-be17-4fea-988d-2fbf5d8274b2")
 	)
 	(gr_arc
-		(start 216.7001 139.59586)
-		(mid 216.47693 140.134701)
-		(end 215.9381 140.35786)
+		(start 216.7001 135.78586)
+		(mid 216.47693 136.324701)
+		(end 215.9381 136.54786)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4099,9 +4322,9 @@
 		(uuid "45c0052c-523e-421b-b143-02be9ea5414f")
 	)
 	(gr_arc
-		(start 215.9381 137.81786)
-		(mid 216.47693 138.041042)
-		(end 216.7001 138.57986)
+		(start 215.9381 134.00786)
+		(mid 216.47693 134.231042)
+		(end 216.7001 134.76986)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4110,8 +4333,8 @@
 		(uuid "6093885b-49a9-4e36-9f76-fff1295899a0")
 	)
 	(gr_line
-		(start 215.9381 140.35786)
-		(end 171.7167 140.35786)
+		(start 215.9381 136.54786)
+		(end 171.7167 136.54786)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4120,9 +4343,9 @@
 		(uuid "8363ecd4-ddc6-40dc-bc65-82dc0dfdba81")
 	)
 	(gr_arc
-		(start 171.7167 140.35786)
-		(mid 171.177899 140.134673)
-		(end 170.9547 139.59586)
+		(start 171.7167 136.54786)
+		(mid 171.177899 136.324673)
+		(end 170.9547 135.78586)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -4131,8 +4354,8 @@
 		(uuid "97c1da2c-42ef-4b35-b24e-a839ccd13807")
 	)
 	(gr_line
-		(start 216.7001 138.57986)
-		(end 216.7001 139.59586)
+		(start 216.7001 134.76986)
+		(end 216.7001 135.78586)
 		(stroke
 			(width 0.05)
 			(type solid)
