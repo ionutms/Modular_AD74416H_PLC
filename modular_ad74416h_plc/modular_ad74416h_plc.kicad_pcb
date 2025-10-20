@@ -117,6 +117,257 @@
 		)
 	)
 	(net 0 "")
+	(footprint "mechanical_parts:2203404_v2"
+		(layer "F.Cu")
+		(uuid "02b8cf11-8ae0-498b-a8e6-676ac6f6e4e6")
+		(at 229.0382 82.1872 180)
+		(descr "UCS CCD 5018 - Corner inlay")
+		(property "Reference" "M3"
+			(at 0 -0.5 180)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ac047e05-9dc7-41bd-90e7-b73d5e3e7897")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "b177acba-af54-4b7c-a64d-9f354236c0d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a80d407f-f99e-4348-9dfa-37dfdd2b3c40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38027f42-3301-4dd2-9786-25c22ba77177")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/4ac5a9c2-7a61-4cdd-b82c-fc0c5d07cf87")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 8.1788 -3.83646)
+			(end 8.1788 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "a1e15619-18b1-4676-89fe-0702364251c5")
+		)
+		(fp_line
+			(start 8.1788 -5.86846)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "5d82e9e6-83c8-4bd4-9332-c85fa329be23")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "d4ecc846-2b8a-4797-9b5a-9cb4dfb06c15")
+		)
+		(fp_line
+			(start 7.7978 -3.83646)
+			(end 8.1788 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "058acb8c-2925-4cec-8507-f34f277968dc")
+		)
+		(fp_line
+			(start 5.8674 -8.1788)
+			(end 5.8674 -8.4074)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "4628675f-85db-48b1-828d-311beed5692f")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end 3.8354 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "d440a90b-2507-4c51-9cbe-633503d4c1a0")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "8af3d002-8cbb-42e8-bfdc-b95c3d5d5826")
+		)
+		(fp_line
+			(start 3.8354 -8.1788)
+			(end 5.8674 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "0f4e10d6-bc8b-4e11-b0ec-dcc8e6bdc6be")
+		)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "1188a708-783a-4fcb-80cb-383c48576728")
+		)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "220c5360-1ca5-4327-90bc-84cc1e159146")
+		)
+		(fp_arc
+			(start 10.9474 -8.40846)
+			(mid 10.203451 -6.612409)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "ac85bcb0-6e87-445c-a757-1c6993925cd2")
+		)
+		(fp_arc
+			(start 8.4074 -10.94846)
+			(mid 10.203451 -10.204511)
+			(end 10.9474 -8.40846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "23794c2b-b4c6-4a31-9469-902ce5c83543")
+		)
+		(fp_arc
+			(start 5.8674 -8.40846)
+			(mid 6.611349 -10.204511)
+			(end 8.4074 -10.94846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "1f1e4d17-218b-4ef2-8fe9-f4061cd9725f")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "ac61962a-1d38-4ca9-b360-06d34948ddc8")
+		)
+		(fp_circle
+			(center 8.4074 -8.40846)
+			(end 9.2964 -8.40846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "54bd2748-905c-4cca-8a92-f1cda08aada8")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "c34571f8-b178-4a0d-a05d-b6688f28a45c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "0ef76a83-2de5-4b94-86c4-a62bb9d24a7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203404_v2.step"
+			(offset
+				(xyz 0 0 -11.176)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "modules_footprints:minimal_adp1074_v2"
 		(layer "F.Cu")
 		(uuid "0c3546e0-9dcd-4cb4-bf08-7dcde0182f58")
@@ -1295,6 +1546,257 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+	)
+	(footprint "mechanical_parts:2203404_v2"
+		(layer "F.Cu")
+		(uuid "921a88a8-2d85-4f1e-a2eb-1cd4461ef5da")
+		(at 229.0382 190.597999 90)
+		(descr "UCS CCD 5018 - Corner inlay")
+		(property "Reference" "M5"
+			(at 0 -0.5 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bcdd2c5d-5031-421c-965f-687556ce1880")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "66d52dc2-bcbf-4637-afe2-68a2a5738df9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f52d7892-f580-4785-a8bf-d63d44200449")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2c570c9-de27-488a-a81f-4e0fdaa4af6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/3b1c8b20-b4a0-4e78-bdce-a91d2b7109bb")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 5.8674 -8.1788)
+			(end 5.8674 -8.4074)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "84211fc5-39ac-4715-8ef4-6a52d04858cd")
+		)
+		(fp_line
+			(start 3.8354 -8.1788)
+			(end 5.8674 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "36e82972-07c0-4bf3-94bb-6350f25b0b0f")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end 3.8354 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "0e3b6546-e8cb-4be6-a533-c2a567a7ec29")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "28fd4b1c-4cf1-4c59-a527-0352685427de")
+		)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "423f7474-b393-47aa-ad20-da8d949607bb")
+		)
+		(fp_line
+			(start 8.1788 -5.86846)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "2e89be48-596f-459c-89a3-edddcc83114e")
+		)
+		(fp_line
+			(start 8.1788 -3.83646)
+			(end 8.1788 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "4d929e66-fe1d-487b-9be0-b0d79f2ae65f")
+		)
+		(fp_line
+			(start 7.7978 -3.83646)
+			(end 8.1788 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "a354a96d-d376-4a14-83d7-3a3ecb368b88")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "46a47a5d-b08f-44ee-955a-352f4688bf6a")
+		)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "a7078356-3b3d-454d-991c-99ad3449062a")
+		)
+		(fp_arc
+			(start 8.4074 -10.94846)
+			(mid 10.203451 -10.204511)
+			(end 10.9474 -8.40846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "5110cb9b-14a5-4aeb-a0d4-4c20c9bf1ded")
+		)
+		(fp_arc
+			(start 10.9474 -8.40846)
+			(mid 10.203451 -6.612409)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "21cbfa95-4f95-4832-b1cd-6f34321d2a63")
+		)
+		(fp_arc
+			(start 5.8674 -8.40846)
+			(mid 6.611349 -10.204511)
+			(end 8.4074 -10.94846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "001fe63e-ddf7-4dc8-b34d-5568556c3900")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "753eeb3d-e6a7-4113-bc0e-622d2519396c")
+		)
+		(fp_circle
+			(center 8.4074 -8.40846)
+			(end 9.2964 -8.40846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "b74555b6-fd0e-46fd-9bfd-d292acf5bdbf")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "889e98f7-cf7c-42df-ab82-d57579c42e0e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "c45e8212-0591-46fb-a72a-8f080ecabcad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203404_v2.step"
+			(offset
+				(xyz 0 0 -11.176)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -3170,6 +3672,257 @@
 			)
 		)
 	)
+	(footprint "mechanical_parts:2203404_v2"
+		(layer "F.Cu")
+		(uuid "bfdc5dc0-6d65-47c6-b043-7e569feb13d6")
+		(at 158.627401 190.597999)
+		(descr "UCS CCD 5018 - Corner inlay")
+		(property "Reference" "M4"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "96e092b3-569e-4bee-bd9c-e6c929371622")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "f28c97f4-1259-413f-b6cc-2d823b69e0bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03dbf86e-19cd-4301-b76f-fb0ce73504e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0afc91b3-cd6b-446c-a87e-6e1982f10a22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/1c5090d4-4dad-4a76-af36-ea3366653d9f")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "310fa21f-48be-4093-bb77-da45b064f9d1")
+		)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "d3993aef-dbb0-4bd7-91ee-20302737a201")
+		)
+		(fp_line
+			(start 3.8354 -8.1788)
+			(end 5.8674 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "f4a45986-c093-4f0f-9c45-f0e5a706ebc2")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "f3126378-1212-43f2-b0fe-df58782855f7")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end 3.8354 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "25190766-4b40-4da6-b46e-71727ba5cc2f")
+		)
+		(fp_line
+			(start 5.8674 -8.1788)
+			(end 5.8674 -8.4074)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "0306d702-f22b-467a-90c2-75d6d6372433")
+		)
+		(fp_line
+			(start 7.7978 -3.83646)
+			(end 8.1788 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "86dedbb6-1ffb-4a63-96e9-59c010e32e98")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "ef80972d-2b4a-44f9-8122-35d8ea9c571f")
+		)
+		(fp_line
+			(start 8.1788 -5.86846)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "8f5a1902-f043-4550-8a7f-3f3d724f2ca3")
+		)
+		(fp_line
+			(start 8.1788 -3.83646)
+			(end 8.1788 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "468d2099-7399-4589-a48b-b099ed1c0faa")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "ab882216-17dc-4cc0-93b2-c48261eb87fd")
+		)
+		(fp_arc
+			(start 5.8674 -8.40846)
+			(mid 6.611349 -10.204511)
+			(end 8.4074 -10.94846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "bc243d14-7655-4320-954b-a5b751e5efc8")
+		)
+		(fp_arc
+			(start 8.4074 -10.94846)
+			(mid 10.203451 -10.204511)
+			(end 10.9474 -8.40846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "538f509b-a783-485b-8671-eccaa56dc04b")
+		)
+		(fp_arc
+			(start 10.9474 -8.40846)
+			(mid 10.203451 -6.612409)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "013e6c8a-0b4f-4c05-ac8b-e034188f8be8")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "562e1896-f699-49d3-af3f-af9dad807159")
+		)
+		(fp_circle
+			(center 8.4074 -8.40846)
+			(end 9.2964 -8.40846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "98c34f8d-205c-439e-8801-e64fd5c3adfa")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "a161f0ae-5228-4fbe-943d-958bc8bb9c62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203404_v2.step"
+			(offset
+				(xyz 0 0 -11.176)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "modules_footprints:minimal_ad74416h"
 		(layer "F.Cu")
 		(uuid "e990606a-8ecd-41cf-84d3-f078c1cbd0e7")
@@ -4056,6 +4809,257 @@
 			)
 		)
 	)
+	(footprint "mechanical_parts:2203404_v2"
+		(layer "F.Cu")
+		(uuid "f38557dd-f1ed-4c6d-89ed-b920cf98655e")
+		(at 158.627401 82.198001 -90)
+		(descr "UCS CCD 5018 - Corner inlay")
+		(property "Reference" "M2"
+			(at 0 -0.5 270)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dd0fc563-0dd5-4400-8db1-9744d718cfb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "70ac2e49-561b-4d91-a9f3-b7c5cb93ea83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d09d1d25-8dac-4ba3-b3b8-8f434db383eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4bc75096-02b7-477a-9fbb-ac5d007f4a73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/0fc0a164-4db6-4769-b79e-d06d876ea050")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -0.0312 8.33014)
+			(end 7.7978 8.33014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "a72ff457-92b1-4187-bffe-8ffa631a5c58")
+		)
+		(fp_line
+			(start 7.7978 8.33014)
+			(end 7.7978 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "88f5bf4b-4491-4f12-92de-90e47510383c")
+		)
+		(fp_line
+			(start 7.7978 -3.83646)
+			(end 8.1788 -3.83646)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "db691aac-b57a-4cc2-a3af-01e98cb7d2c5")
+		)
+		(fp_line
+			(start 8.1788 -3.83646)
+			(end 8.1788 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "8bb9b5fb-9954-4171-bf9e-50e670229138")
+		)
+		(fp_line
+			(start 8.1788 -5.86846)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "133bb3c2-00be-472a-9533-9037dc4bdc78")
+		)
+		(fp_line
+			(start -8.3312 -7.79886)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "0216c765-b636-461c-a538-6c28425105ad")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end -8.3312 -7.79886)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "63faf4de-fa65-444d-a1e5-942d557ddc02")
+		)
+		(fp_line
+			(start 3.8354 -7.79886)
+			(end 3.8354 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "646efb9b-e884-4c0e-90d6-4bd6c901a9a2")
+		)
+		(fp_line
+			(start 3.8354 -8.1788)
+			(end 5.8674 -8.1788)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Cmts.User")
+			(uuid "4545677d-3b9a-4820-97d3-b2707d5aab10")
+		)
+		(fp_line
+			(start 5.8674 -8.1788)
+			(end 5.8674 -8.4074)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "a65df951-4813-4f58-b412-235f5b5213cd")
+		)
+		(fp_arc
+			(start -0.0312 8.33014)
+			(mid -5.900186 5.899126)
+			(end -8.3312 0.03014)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "bbc8d9a3-3444-4f18-be3e-b5cd6f45b3ce")
+		)
+		(fp_arc
+			(start 5.8674 -8.40846)
+			(mid 6.611349 -10.204511)
+			(end 8.4074 -10.94846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "5c764837-48a5-4f67-b03c-fd0db5038adc")
+		)
+		(fp_arc
+			(start 10.9474 -8.40846)
+			(mid 10.203451 -6.612409)
+			(end 8.4074 -5.86846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "01c2e82e-801c-4b4a-b88b-77f3d413a170")
+		)
+		(fp_arc
+			(start 8.4074 -10.94846)
+			(mid 10.203451 -10.204511)
+			(end 10.9474 -8.40846)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "Cmts.User")
+			(uuid "6db536a6-c37e-4e6e-a609-c93e8f0827fe")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.778 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "36330208-9d7a-47bf-8762-ef07379c160e")
+		)
+		(fp_circle
+			(center 8.4074 -8.40846)
+			(end 9.2964 -8.40846)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "d391fcf3-da72-4d9c-8451-73e3ceacb924")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "3f2587e2-9735-4eef-b172-748f3e7bfd0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203404_v2.step"
+			(offset
+				(xyz 0 0 -11.176)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+	)
 	(footprint "mechanical_parts:2203350"
 		(layer "F.Cu")
 		(uuid "f495f6fc-74d0-4b10-b862-d86b5a43e0e4")
@@ -4269,7 +5273,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203350.step"
 			(offset
-				(xyz 0 0 -13.335)
+				(xyz 0 0 -14.097)
 			)
 			(scale
 				(xyz 1 1 1)

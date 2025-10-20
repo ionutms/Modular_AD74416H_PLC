@@ -72,6 +72,86 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "M"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "mechanical_parts:2203404_v2"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "UCS CCD 5018 - Corner inlay"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "M_2203404_v2_0_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy 0 0) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.08)
+					(mid -3.5921 -3.5921)
+					(end -5.08 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "UNITED_MODULES_DATA_BASE:AD74416H_POWER_INTERFACE_MODULE_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -394,6 +474,274 @@
 		)
 	)
 	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2")
+		(at 60.96 165.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fc0a164-4db6-4769-b79e-d06d876ea050")
+		(property "Reference" "M2"
+			(at 62.23 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 62.23 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203404_v2"
+			(at 60.96 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 60.96 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 60.96 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2")
+		(at 91.44 134.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c5090d4-4dad-4a76-af36-ea3366653d9f")
+		(property "Reference" "M4"
+			(at 97.79 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 97.79 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203404_v2"
+			(at 91.44 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 91.44 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 91.44 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "modular_ad74416h_plc"
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2")
+		(at 60.96 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b1c8b20-b4a0-4e78-bdce-a91d2b7109bb")
+		(property "Reference" "M5"
+			(at 62.23 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 62.23 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203404_v2"
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 43.18 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 40.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "modular_ad74416h_plc"
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203404_v2")
+		(at 91.44 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ac5a9c2-7a61-4cdd-b82c-fc0c5d07cf87")
+		(property "Reference" "M3"
+			(at 97.79 166.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "~"
+			(at 97.79 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "mechanical_parts:2203404_v2"
+			(at 106.68 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product-download.phoenixcontact.com/8993829?response-content-disposition=inline;%20filename%3D%22pxc_2203404_00_04_UCS-CCD-5018_2D.pdf%22&Expires=1760993781&Signature=hiXDHE2a7QlZMelQjIMSlmcRDcrNVedl0tuJNL~EhL~9If~dxsbeqpHLNqBCKf1c8pUA0HdKEZKHIUr7KcAP3qLvEPi-ukzmFAk0mC-qXU~U8xA8X4o0dOvUYeueJ7pZNDl-GI8wH3Jfz9SOoQVhLWhGz6Pp45rDxzPFH57g2VCTMNN-zQ8WBDXPo08ORLR2n8kDh48RR0DGYbqUmSuPK-aXdS-1a30H7ZOCpl8-yNSBEcm~2BxBElp-A3ML~5aXGysvYFKdSa3a0wTRto4stLt-TIalFjSigaIjx-qH~ey4o-n4mHwclgh0TG0tPf-K-hl5pxWdDLXNhBTB-s0SJA__&Key-Pair-Id=K1I2N54A7B0GD"
+			(at 109.22 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "UCS CCD 5018 - Corner inlay"
+			(at 111.76 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "modular_ad74416h_plc"
+				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
+					(reference "M3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H_STACK_ADAPTER_v2")
 		(at 195.58 119.38 0)
 		(unit 1)
@@ -460,7 +808,7 @@
 	)
 	(symbol
 		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203350")
-		(at 74.93 151.13 0)
+		(at 76.2 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -469,7 +817,7 @@
 		(fields_autoplaced yes)
 		(uuid "7145f48f-a64a-4180-bd2f-cb0ba00224e9")
 		(property "Reference" "M1"
-			(at 88.9 149.8599 0)
+			(at 90.17 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -478,7 +826,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 88.9 152.3999 0)
+			(at 90.17 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -487,7 +835,7 @@
 			)
 		)
 		(property "Footprint" "mechanical_parts:2203350"
-			(at 74.93 166.37 0)
+			(at 76.2 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -497,7 +845,7 @@
 			)
 		)
 		(property "Datasheet" "https://product-download.phoenixcontact.com/8025199?response-content-disposition=inline;%20filename%3D%22pxc_2203350_00_02_UCS-HH-125-87-9005_2D.pdf%22&Expires=1760989045&Signature=yE5~e9oEp1czmAuNjEVI-zMCk115UdZsJSv~rrHj0mJAaEc55~bR20bW9JJOB3hki3HOREKBknujH~8gYOUKHzLpSGgETtHOQerG8jWvvCgEOtBdmOWxPCFsOz9Wsha5f2~VPSQJvuGHCf2CTsN5w1iZpHUNsgk-mkW2p9pzyOLKxVWYhtjSbQv3gEOsVOjFHlOlmTX7rqb6sJSqriLur8mA9m3Tjg-Z30FHvQ1KxAkSK4hrzVgTKxESnhz77NCWnp-s970KOF79zwJtK4mF8zDCIv5i5t6kHDL5A9xxqz5SxQzMk3O-D3HhNnTfdPWE6WLROkbUQOZ4tbjTyLeyWA__&Key-Pair-Id=K1I2N54A7B0GD"
-			(at 74.93 168.91 0)
+			(at 76.2 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -507,7 +855,7 @@
 			)
 		)
 		(property "Description" "UCS HH 125-87 9005 - Housing half shell"
-			(at 74.93 171.45 0)
+			(at 76.2 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
