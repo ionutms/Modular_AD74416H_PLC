@@ -207,7 +207,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_adp1074.step"
 			(offset
-				(xyz 0 0 22.098)
+				(xyz 0 0 19.5072)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -925,7 +925,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 10.922)
+				(xyz 0 0 10.033)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1020,7 +1020,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h_stack_adapter.step"
 			(offset
-				(xyz 0 0 24.1808)
+				(xyz 0 0 22.86)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1101,7 +1101,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "96485b8c-f10a-4464-8cdf-105f0470ec97")
+			(uuid "66042e58-c98c-4bdd-8f5c-873326411ca7")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.54 0)
@@ -1120,7 +1120,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module.step"
 			(offset
-				(xyz 0 0 23.6982)
+				(xyz 0 0 21.082)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1838,7 +1838,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 35.306)
+				(xyz 0 0 32.639)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -2656,7 +2656,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_adpl76030.step"
 			(offset
-				(xyz 0 0 22.606)
+				(xyz 0 0 19.939)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3374,7 +3374,7 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 23.114)
+				(xyz 0 0 21.336)
 			)
 			(scale
 				(xyz 1 1 1)
