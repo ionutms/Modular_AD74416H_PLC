@@ -311,7 +311,7 @@ jobs:
                   --light-top '255,255,255' \
                   --light-bottom '255,255,255' \
                   # --light-side '255,255,255' \
-                  # --light-camera '255,255,255' \
+                  --light-camera '255,255,255' \
                   --light-side-elevation 90
               fi && \
 
