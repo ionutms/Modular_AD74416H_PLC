@@ -308,10 +308,58 @@ jobs:
                   --rotate ${{ steps.kicad-config.outputs.side_view_rotate }} \
                   --pan ${{ steps.kicad-config.outputs.side_view_pan }} \
                   --zoom ${{ steps.kicad-config.outputs.side_view_zoom_factor }} \
-                  --light-top '0,0,0' \
-                  --light-bottom '0,0,0' \
+                  # --light-top '0,0,0' \
+                  # --light-bottom '0,0,0' \
                   --light-side '255,255,255' \
-                  # --light-camera '255,255,255' \
+                  --light-camera '255,255,255' \
+                  --light-side-elevation 90
+              fi && \
+
+              # Generate PCB render side view if PCB found
+              if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
+                kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/1_1_${PROJECT_NAME}_side.png" \
+                  --background transparent \
+                  --quality high \
+                  --rotate ${{ steps.kicad-config.outputs.side_view_rotate }} \
+                  --pan ${{ steps.kicad-config.outputs.side_view_pan }} \
+                  --zoom ${{ steps.kicad-config.outputs.side_view_zoom_factor }} \
+                  # --light-top '0,0,0' \
+                  # --light-bottom '0,0,0' \
+                  --light-side '0,0,0' \
+                  --light-camera '255,255,255' \
+                  --light-side-elevation 90
+              fi && \
+
+              # Generate PCB render side view if PCB found
+              if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
+                kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/1_2_${PROJECT_NAME}_side.png" \
+                  --background transparent \
+                  --quality high \
+                  --rotate ${{ steps.kicad-config.outputs.side_view_rotate }} \
+                  --pan ${{ steps.kicad-config.outputs.side_view_pan }} \
+                  --zoom ${{ steps.kicad-config.outputs.side_view_zoom_factor }} \
+                  # --light-top '0,0,0' \
+                  # --light-bottom '0,0,0' \
+                  --light-side '255,255,255' \
+                  --light-camera '0,0,0' \
+                  --light-side-elevation 90
+              fi && \
+
+              # Generate PCB render side view if PCB found
+              if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
+                kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/1_3_${PROJECT_NAME}_side.png" \
+                  --background transparent \
+                  --quality high \
+                  --rotate ${{ steps.kicad-config.outputs.side_view_rotate }} \
+                  --pan ${{ steps.kicad-config.outputs.side_view_pan }} \
+                  --zoom ${{ steps.kicad-config.outputs.side_view_zoom_factor }} \
+                  # --light-top '0,0,0' \
+                  # --light-bottom '0,0,0' \
+                  --light-side '0,0,0' \
+                  --light-camera '0,0,0' \
                   --light-side-elevation 90
               fi && \
 
