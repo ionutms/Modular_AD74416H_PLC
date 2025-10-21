@@ -368,7 +368,7 @@
 			)
 		)
 	)
-	(footprint "mechanical_parts:2203369"
+	(footprint "mechanical_parts:2203369_v3"
 		(layer "F.Cu")
 		(uuid "05f7fc9e-eb26-4f2f-b71f-a7c7908da516")
 		(at 161.4774 136.398 90)
@@ -437,7 +437,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "7d5c37c9-1307-4221-817f-8fa45c51b606")
+			(uuid "e1d4bd00-9391-45da-b8fe-9fe7885a5247")
 		)
 		(fp_circle
 			(center 0 0)
@@ -448,7 +448,20 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "beabeed1-8618-430d-9fc2-8800fa97c48b")
+			(uuid "0d5bb6b3-34cc-4482-b1c9-4e8fb7d97bd2")
+		)
+		(fp_text user "INSIDE"
+			(at 0 1.254 90)
+			(unlocked yes)
+			(layer "Cmts.User")
+			(uuid "7be68e62-df76-44b0-9b10-47964320f454")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify top)
+			)
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 90)
@@ -463,7 +476,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203369.step"
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203369_v3.step"
 			(offset
 				(xyz 0 0 -10.795)
 			)
@@ -2264,13 +2277,13 @@
 			)
 		)
 	)
-	(footprint "mechanical_parts:2203369"
+	(footprint "mechanical_parts:2203369_v2"
 		(layer "F.Cu")
 		(uuid "570b0bc2-8cd6-40d9-9261-b01d3a11d425")
-		(at 226.1774 136.398 90)
+		(at 226.1774 136.398 -90)
 		(descr "UCS SW 125-H 9005 - Side panel")
 		(property "Reference" "M13"
-			(at 0 -0.5 90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2283,7 +2296,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 0 1 90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "17b1a7cd-c140-4b82-8915-fd9d6d1330cf")
@@ -2295,7 +2308,7 @@
 			)
 		)
 		(property "Datasheet" "https://product-download.phoenixcontact.com/8025216?response-content-disposition=inline;%20filename%3D%22pxc_2203369_00_02_UCS-SW-125-H-9005_2D.pdf%22&Expires=1761056853&Signature=Elavun16ZDRag4fYKCHkcusJXcOnWzFvMW7t2-FhkWKVnGfBjCtrisUAGn8dgXbz7tqC-MFv~-HAoJ4RRO~oyaSz6fZVLx8HJUVw9MVWOIMWZqYRDA1cWn046ipODV3G9VlxL9psAd0WUnw0kIuueiRmcIBg0arDlinCFgKsFzCjUg8W5d57d3M10xh4yki7gzGUgAnyekGvwyFAJYetOc9SCB~1HidskF3rN1I9C6WV-DTvCTJUef~EppKN2jcFIjtqHqAvC-5ViXo2OzJjZkpJWfoMQSUUvOvYPmILNj1emCQI2upsiDALmbWJLlB313pa3SRVGDdh2J37d35UTA__&Key-Pair-Id=K1I2N54A7B0GD"
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2308,7 +2321,7 @@
 			)
 		)
 		(property "Description" "UCS SW 125-H 9005 - Side panel"
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2333,7 +2346,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "66df77fc-d500-4f77-89c3-5f4a270ec28c")
+			(uuid "be23a40e-b9c8-4e65-b5a4-8ad9e03de554")
 		)
 		(fp_circle
 			(center 0 0)
@@ -2344,10 +2357,23 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "9483a36b-965c-4e73-9f46-c00c0dd71bc3")
+			(uuid "e03d75a3-3058-4563-a1ea-bb570882dd81")
+		)
+		(fp_text user "INSIDE"
+			(at 0 1.254 270)
+			(unlocked yes)
+			(layer "Cmts.User")
+			(uuid "5f36140a-709b-49c0-ac1f-268389bddb1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify top)
+			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "df446247-a3e6-4a8c-acf7-901bd76501fe")
@@ -2359,7 +2385,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203369.step"
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203369_v2.step"
 			(offset
 				(xyz 0 0 -10.795)
 			)
@@ -2371,13 +2397,13 @@
 			)
 		)
 	)
-	(footprint "mechanical_parts:2203362"
+	(footprint "mechanical_parts:2203362_v3"
 		(layer "F.Cu")
 		(uuid "6993e7f5-3ac7-4db5-b02f-5a2e65b1a1bc")
-		(at 193.8274 187.748)
+		(at 193.8274 187.748 180)
 		(descr "UCS SW 87-H 9005 - Side panel")
 		(property "Reference" "M11"
-			(at 0 -0.5 0)
+			(at 0 -0.5 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2390,7 +2416,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 0 1 0)
+			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c78d8f89-2ec5-4636-afe5-cd78e83809b9")
@@ -2402,7 +2428,7 @@
 			)
 		)
 		(property "Datasheet" "https://product-download.phoenixcontact.com/8025210?response-content-disposition=inline;%20filename%3D%22pxc_2203362_00_02_UCS-SW-87-H-9005_2D.pdf%22&Expires=1761055811&Signature=uIuTNwUV0nNMKCMWntQiR0tQVbkUdQeM75yPJvMqp2Dy5y10od-qT4KOj3T4klfL2XRucsBdIQCshTdg-JT7QJVnzYZU4Oz3KVPC5mMoDcnuhzjmDmuwfcl9JjQUVV63~qkb4fqLc9UBsreQGl6am9GCxFLbWsQMvFq6rIS4Z-O7I0HjKHGw909pMc~FlgKurZ9X9IdJj1DkSjJy8y9wHKJlUI3CuZzRBLW-uGakJIS1s0pQPxME3O7tf1Ip2bQay0DIYXr-CPLAxPGTg9zQfLLM6Z1lp8V6ehwVnvdEsxAjqIKRrip6HmTKAaRd3SNd5CAGQjtEeGkxFbPm1JATuA__&Key-Pair-Id=K1I2N54A7B0GD"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2415,7 +2441,7 @@
 			)
 		)
 		(property "Description" "UCS SW 87-H 9005 - Side panel"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2440,7 +2466,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "0ab4c94b-5d0a-4bc2-8c3e-f309d57fb68e")
+			(uuid "bcb047b4-dbfe-4142-be08-b216562b02f3")
 		)
 		(fp_circle
 			(center 0 0)
@@ -2451,10 +2477,23 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "00e438f0-c1da-4176-b2da-43f8ace3b3f7")
+			(uuid "e9d2305d-01c1-4293-93d8-dc844ce6457d")
+		)
+		(fp_text user "INSIDE"
+			(at 0 1.254 180)
+			(unlocked yes)
+			(layer "Cmts.User")
+			(uuid "4f70721f-0c6c-40de-af13-93646585c030")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify top)
+			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 0)
+			(at 0 2.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "57809642-c65e-48b5-b9d7-80bcb35d28eb")
@@ -2466,7 +2505,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203362.step"
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203362_v3.step"
 			(offset
 				(xyz 0 0 -10.795)
 			)
@@ -2625,7 +2664,7 @@
 			)
 		)
 	)
-	(footprint "mechanical_parts:2203362"
+	(footprint "mechanical_parts:2203362_v2"
 		(layer "F.Cu")
 		(uuid "73781a50-f622-432a-a91f-988a2742f918")
 		(at 193.8274 85.0392)
@@ -2694,7 +2733,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "d5f779c1-e838-42b7-af65-123f78955f3d")
+			(uuid "e3dd80b9-1d12-4aaa-8be2-619d52948726")
 		)
 		(fp_circle
 			(center 0 0)
@@ -2705,7 +2744,20 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "0183215b-3f87-4f44-87cf-b4133e823f78")
+			(uuid "02f31cd0-56b1-47a6-9a8a-58c9256ba7fc")
+		)
+		(fp_text user "INSIDE"
+			(at 0 1.254 0)
+			(unlocked yes)
+			(layer "Cmts.User")
+			(uuid "73a77b37-32ed-4272-a174-091657527284")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify top)
+			)
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -2720,7 +2772,7 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203362.step"
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203362_v2.step"
 			(offset
 				(xyz 0 0 -10.795)
 			)
