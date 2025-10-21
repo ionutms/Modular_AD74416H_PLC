@@ -308,10 +308,10 @@ jobs:
                   --rotate ${{ steps.kicad-config.outputs.side_view_rotate }} \
                   --pan ${{ steps.kicad-config.outputs.side_view_pan }} \
                   --zoom ${{ steps.kicad-config.outputs.side_view_zoom_factor }} \
-                  --light-top '#FFFFFF' \
-                  --light-bottom '#404040' \
-                  --light-side '#C0C0C0' \
-                  --light-camera '#C0C0C0' \
+                  # --light-top '#FFFFFF' \
+                  # --light-bottom '#404040' \
+                  # --light-side '#C0C0C0' \
+                  # --light-camera '#C0C0C0' \
                   --light-side-elevation 45
               fi && \
 
