@@ -309,9 +309,9 @@ jobs:
                   --pan ${{ steps.kicad-config.outputs.side_view_pan }} \
                   --zoom ${{ steps.kicad-config.outputs.side_view_zoom_factor }} \
                   --light-top '255,0,0' \
-                  --light-bottom '0,255,0' \
+                  # --light-bottom '0,255,0' \
                   --light-side '0,0,255' \
-                  --light-camera '255,255,255' \
+                  # --light-camera '255,255,255' \
                   --light-side-elevation 0
               fi && \
 
