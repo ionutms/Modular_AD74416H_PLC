@@ -2182,7 +2182,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203350.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 52.197)
 			)
