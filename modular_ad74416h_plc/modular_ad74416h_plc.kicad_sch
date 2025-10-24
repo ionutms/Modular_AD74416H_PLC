@@ -139,73 +139,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203362_v3"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "mechanical_parts:2203362_v3"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://product-download.phoenixcontact.com/8025210?response-content-disposition=inline;%20filename%3D%22pxc_2203362_00_02_UCS-SW-87-H-9005_2D.pdf%22&Expires=1761055811&Signature=uIuTNwUV0nNMKCMWntQiR0tQVbkUdQeM75yPJvMqp2Dy5y10od-qT4KOj3T4klfL2XRucsBdIQCshTdg-JT7QJVnzYZU4Oz3KVPC5mMoDcnuhzjmDmuwfcl9JjQUVV63~qkb4fqLc9UBsreQGl6am9GCxFLbWsQMvFq6rIS4Z-O7I0HjKHGw909pMc~FlgKurZ9X9IdJj1DkSjJy8y9wHKJlUI3CuZzRBLW-uGakJIS1s0pQPxME3O7tf1Ip2bQay0DIYXr-CPLAxPGTg9zQfLLM6Z1lp8V6ehwVnvdEsxAjqIKRrip6HmTKAaRd3SNd5CAGQjtEeGkxFbPm1JATuA__&Key-Pair-Id=K1I2N54A7B0GD"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "UCS SW 87-H 9005 - Side panel"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "M_2203362_v3_0_1"
-				(rectangle
-					(start -15.24 1.27)
-					(end 15.24 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203369_v2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -259,73 +192,6 @@
 				)
 			)
 			(symbol "M_2203369_v2_0_1"
-				(rectangle
-					(start -15.24 1.27)
-					(end 15.24 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203369_v3"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "mechanical_parts:2203369_v3"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://product-download.phoenixcontact.com/8025216?response-content-disposition=inline;%20filename%3D%22pxc_2203369_00_02_UCS-SW-125-H-9005_2D.pdf%22&Expires=1761056853&Signature=Elavun16ZDRag4fYKCHkcusJXcOnWzFvMW7t2-FhkWKVnGfBjCtrisUAGn8dgXbz7tqC-MFv~-HAoJ4RRO~oyaSz6fZVLx8HJUVw9MVWOIMWZqYRDA1cWn046ipODV3G9VlxL9psAd0WUnw0kIuueiRmcIBg0arDlinCFgKsFzCjUg8W5d57d3M10xh4yki7gzGUgAnyekGvwyFAJYetOc9SCB~1HidskF3rN1I9C6WV-DTvCTJUef~EppKN2jcFIjtqHqAvC-5ViXo2OzJjZkpJWfoMQSUUvOvYPmILNj1emCQI2upsiDALmbWJLlB313pa3SRVGDdh2J37d35UTA__&Key-Pair-Id=K1I2N54A7B0GD"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "UCS SW 125-H 9005 - Side panel"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(symbol "M_2203369_v3_0_1"
 				(rectangle
 					(start -15.24 1.27)
 					(end 15.24 -1.27)
@@ -1555,7 +1421,7 @@
 		)
 	)
 	(symbol
-		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203362_v3")
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203362_v2")
 		(at 76.2 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1580,7 +1446,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mechanical_parts:2203362_v3"
+		(property "Footprint" "mechanical_parts:2203362_v2"
 			(at 76.2 127 0)
 			(effects
 				(font
@@ -1817,7 +1683,7 @@
 		)
 	)
 	(symbol
-		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203369_v3")
+		(lib_id "UNITED_MECHANICAL_DATA_BASE:M_2203369_v2")
 		(at 53.34 101.6 90)
 		(mirror x)
 		(unit 1)
@@ -1844,7 +1710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "mechanical_parts:2203369_v3"
+		(property "Footprint" "mechanical_parts:2203369_v2"
 			(at 55.88 101.6 0)
 			(effects
 				(font
