@@ -102,6 +102,20 @@ jobs:
         if: steps.find-files.outputs.pcb_found == 'true'
         run: |
           # Set default values
+          echo "picture_prefix_side=1_" >> $GITHUB_OUTPUT
+          echo "picture_prefix_top=2_" >> $GITHUB_OUTPUT
+          echo "picture_prefix_bottom=3_" >> $GITHUB_OUTPUT
+          echo "picture_prefix_left=4_" >> $GITHUB_OUTPUT
+          echo "picture_prefix_right=5_" >> $GITHUB_OUTPUT
+          echo "picture_prefix_front=6_" >> $GITHUB_OUTPUT
+          echo "picture_prefix_back=7_" >> $GITHUB_OUTPUT
+          echo "picture_suffix_side=_side" >> $GITHUB_OUTPUT
+          echo "picture_suffix_top=_top" >> $GITHUB_OUTPUT
+          echo "picture_suffix_bottom=_bottom" >> $GITHUB_OUTPUT
+          echo "picture_suffix_left=_left" >> $GITHUB_OUTPUT
+          echo "picture_suffix_right=_right" >> $GITHUB_OUTPUT
+          echo "picture_suffix_front=_front" >> $GITHUB_OUTPUT
+          echo "picture_suffix_back=_back" >> $GITHUB_OUTPUT
           echo "side_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
           echo "side_view_rotate=\"0,0,0\"" >> $GITHUB_OUTPUT
           echo "side_view_pan=\"0,0,0\"" >> $GITHUB_OUTPUT
@@ -126,6 +140,78 @@ jobs:
           # Extract parameters from config file if it exists
           if [ -f ".github/kicad-config.yml" ]; then
             echo "Found configuration file"
+            
+            # Extract picture prefixes with proper trimming
+            PICTURE_PREFIX_SIDE=$(grep 'picture_prefix_side:' .github/kicad-config.yml | sed 's/picture_prefix_side: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_SIDE" ]; then
+              echo "picture_prefix_side=$PICTURE_PREFIX_SIDE" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_PREFIX_TOP=$(grep 'picture_prefix_top:' .github/kicad-config.yml | sed 's/picture_prefix_top: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_TOP" ]; then
+              echo "picture_prefix_top=$PICTURE_PREFIX_TOP" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_PREFIX_BOTTOM=$(grep 'picture_prefix_bottom:' .github/kicad-config.yml | sed 's/picture_prefix_bottom: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_BOTTOM" ]; then
+              echo "picture_prefix_bottom=$PICTURE_PREFIX_BOTTOM" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_PREFIX_LEFT=$(grep 'picture_prefix_left:' .github/kicad-config.yml | sed 's/picture_prefix_left: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_LEFT" ]; then
+              echo "picture_prefix_left=$PICTURE_PREFIX_LEFT" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_PREFIX_RIGHT=$(grep 'picture_prefix_right:' .github/kicad-config.yml | sed 's/picture_prefix_right: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_RIGHT" ]; then
+              echo "picture_prefix_right=$PICTURE_PREFIX_RIGHT" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_PREFIX_FRONT=$(grep 'picture_prefix_front:' .github/kicad-config.yml | sed 's/picture_prefix_front: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_FRONT" ]; then
+              echo "picture_prefix_front=$PICTURE_PREFIX_FRONT" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_PREFIX_BACK=$(grep 'picture_prefix_back:' .github/kicad-config.yml | sed 's/picture_prefix_back: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_PREFIX_BACK" ]; then
+              echo "picture_prefix_back=$PICTURE_PREFIX_BACK" >> $GITHUB_OUTPUT
+            fi
+            
+            # Extract picture suffixes with proper trimming
+            PICTURE_SUFFIX_SIDE=$(grep 'picture_suffix_side:' .github/kicad-config.yml | sed 's/picture_suffix_side: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_SIDE" ]; then
+              echo "picture_suffix_side=$PICTURE_SUFFIX_SIDE" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_SUFFIX_TOP=$(grep 'picture_suffix_top:' .github/kicad-config.yml | sed 's/picture_suffix_top: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_TOP" ]; then
+              echo "picture_suffix_top=$PICTURE_SUFFIX_TOP" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_SUFFIX_BOTTOM=$(grep 'picture_suffix_bottom:' .github/kicad-config.yml | sed 's/picture_suffix_bottom: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_BOTTOM" ]; then
+              echo "picture_suffix_bottom=$PICTURE_SUFFIX_BOTTOM" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_SUFFIX_LEFT=$(grep 'picture_suffix_left:' .github/kicad-config.yml | sed 's/picture_suffix_left: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_LEFT" ]; then
+              echo "picture_suffix_left=$PICTURE_SUFFIX_LEFT" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_SUFFIX_RIGHT=$(grep 'picture_suffix_right:' .github/kicad-config.yml | sed 's/picture_suffix_right: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_RIGHT" ]; then
+              echo "picture_suffix_right=$PICTURE_SUFFIX_RIGHT" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_SUFFIX_FRONT=$(grep 'picture_suffix_front:' .github/kicad-config.yml | sed 's/picture_suffix_front: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_FRONT" ]; then
+              echo "picture_suffix_front=$PICTURE_SUFFIX_FRONT" >> $GITHUB_OUTPUT
+            fi
+            
+            PICTURE_SUFFIX_BACK=$(grep 'picture_suffix_back:' .github/kicad-config.yml | sed 's/picture_suffix_back: *//' | tr -d '\n\r' | sed 's/^"\|"$//g' | sed "s/^'\|'$//g")
+            if [ ! -z "$PICTURE_SUFFIX_BACK" ]; then
+              echo "picture_suffix_back=$PICTURE_SUFFIX_BACK" >> $GITHUB_OUTPUT
+            fi
             
             # Extract zoom factor with proper trimming
             SIDE_VIEW_ZOOM_FACTOR=$(grep 'side_view_zoom_factor:' .github/kicad-config.yml | sed 's/side_view_zoom_factor: *//' | tr -d '\n\r')
@@ -292,7 +378,7 @@ jobs:
               # Generate PCB render side view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/1_${PROJECT_NAME}_side.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_side }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_side }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 30 \
@@ -304,7 +390,7 @@ jobs:
               # Generate PCB render top view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/2_${PROJECT_NAME}_top.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_top }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_top }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 60 \
@@ -315,7 +401,7 @@ jobs:
               # Generate PCB render bottom view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/3_${PROJECT_NAME}_bottom.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_bottom }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_bottom }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 60 \
@@ -327,7 +413,7 @@ jobs:
               # Generate PCB render left side view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/4_${PROJECT_NAME}_left.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_left }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_left }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 10 \
@@ -339,7 +425,7 @@ jobs:
               # Generate PCB render right side view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/5_${PROJECT_NAME}_right.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_right }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_right }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 10 \
@@ -351,7 +437,7 @@ jobs:
               # Generate PCB render front view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/6_${PROJECT_NAME}_front.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_front }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_front }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 10 \
@@ -364,7 +450,7 @@ jobs:
               # Generate PCB render back view if PCB found
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
                 kicad-cli pcb render /kicad_project/${{ steps.find-files.outputs.pcb_file }} \
-                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/7_${PROJECT_NAME}_back.png" \
+                  -o "/kicad_project/$PROJECT_NAME/docs/pictures/${{ steps.kicad-config.outputs.picture_prefix_back }}${PROJECT_NAME}${{ steps.kicad-config.outputs.picture_suffix_back }}.png" \
                   --background transparent \
                   --quality high \
                   --light-side-elevation 10 \
