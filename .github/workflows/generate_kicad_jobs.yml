@@ -154,193 +154,120 @@ jobs:
             echo "$default"
           }
           
-          # Set default values
-          echo "side_view_prefix=1_" >> $GITHUB_OUTPUT
-          echo "side_view_suffix=_side" >> $GITHUB_OUTPUT
-          echo "side_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "side_view_rotate=0,0,0" >> $GITHUB_OUTPUT
-          echo "side_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "side_view_light_elevation=30" >> $GITHUB_OUTPUT
-          
-          echo "top_view_prefix=2_" >> $GITHUB_OUTPUT
-          echo "top_view_suffix=_top" >> $GITHUB_OUTPUT
-          echo "top_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "top_view_rotate=0,0,0" >> $GITHUB_OUTPUT
-          echo "top_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "top_view_light_elevation=60" >> $GITHUB_OUTPUT
-          
-          echo "bottom_view_prefix=3_" >> $GITHUB_OUTPUT
-          echo "bottom_view_suffix=_bottom" >> $GITHUB_OUTPUT
-          echo "bottom_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "bottom_view_rotate=0,0,0" >> $GITHUB_OUTPUT
-          echo "bottom_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "bottom_view_light_elevation=60" >> $GITHUB_OUTPUT
-          
-          echo "left_view_prefix=4_" >> $GITHUB_OUTPUT
-          echo "left_view_suffix=_left" >> $GITHUB_OUTPUT
-          echo "left_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "left_view_rotate=0,90,0" >> $GITHUB_OUTPUT
-          echo "left_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "left_view_light_elevation=10" >> $GITHUB_OUTPUT
-          
-          echo "right_view_prefix=5_" >> $GITHUB_OUTPUT
-          echo "right_view_suffix=_right" >> $GITHUB_OUTPUT
-          echo "right_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "right_view_rotate=0,-90,0" >> $GITHUB_OUTPUT
-          echo "right_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "right_view_light_elevation=10" >> $GITHUB_OUTPUT
-          
-          echo "front_view_prefix=6_" >> $GITHUB_OUTPUT
-          echo "front_view_suffix=_front" >> $GITHUB_OUTPUT
-          echo "front_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "front_view_rotate=0,0,0" >> $GITHUB_OUTPUT
-          echo "front_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "front_view_light_elevation=10" >> $GITHUB_OUTPUT
-          
-          echo "back_view_prefix=7_" >> $GITHUB_OUTPUT
-          echo "back_view_suffix=_back" >> $GITHUB_OUTPUT
-          echo "back_view_zoom_factor=1.0" >> $GITHUB_OUTPUT
-          echo "back_view_rotate=0,0,0" >> $GITHUB_OUTPUT
-          echo "back_view_pan=0,0,0" >> $GITHUB_OUTPUT
-          echo "back_view_light_elevation=10" >> $GITHUB_OUTPUT
-          
-          # Extract custom values if config file exists and override defaults
+          # Extract all view names from the config file
           if [ -f ".github/kicad-config.yml" ]; then
-            echo "Found configuration file, extracting custom values..."
+            VIEW_NAMES=$(awk '
+              /^views:/ { in_views = 1; next }
+              in_views && /^[a-z_]+:/ && /^[^ ]/ {
+                gsub(/:$/, "", $1)
+                if ($1 != "" && $1 != "views") {
+                  print $1
+                }
+              }
+            ' .github/kicad-config.yml | sort -u)
             
-            # Side view
-            PREFIX=$(extract_value "views.side.prefix" "1_")
-            echo "side_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.side.suffix" "_side")
-            echo "side_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.side.zoom_factor" "1.0")
-            echo "side_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.side.rotate" "0,0,0")
-            echo "side_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.side.pan" "0,0,0")
-            echo "side_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.side.light_elevation" "30")
-            echo "side_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
-            
-            # Top view
-            PREFIX=$(extract_value "views.top.prefix" "2_")
-            echo "top_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.top.suffix" "_top")
-            echo "top_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.top.zoom_factor" "1.0")
-            echo "top_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.top.rotate" "0,0,0")
-            echo "top_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.top.pan" "0,0,0")
-            echo "top_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.top.light_elevation" "60")
-            echo "top_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
-            
-            # Bottom view
-            PREFIX=$(extract_value "views.bottom.prefix" "3_")
-            echo "bottom_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.bottom.suffix" "_bottom")
-            echo "bottom_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.bottom.zoom_factor" "1.0")
-            echo "bottom_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.bottom.rotate" "0,0,0")
-            echo "bottom_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.bottom.pan" "0,0,0")
-            echo "bottom_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.bottom.light_elevation" "60")
-            echo "bottom_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
-            
-            # Left view
-            PREFIX=$(extract_value "views.left.prefix" "4_")
-            echo "left_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.left.suffix" "_left")
-            echo "left_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.left.zoom_factor" "1.0")
-            echo "left_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.left.rotate" "0,90,0")
-            echo "left_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.left.pan" "0,0,0")
-            echo "left_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.left.light_elevation" "10")
-            echo "left_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
-            
-            # Right view
-            PREFIX=$(extract_value "views.right.prefix" "5_")
-            echo "right_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.right.suffix" "_right")
-            echo "right_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.right.zoom_factor" "1.0")
-            echo "right_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.right.rotate" "0,-90,0")
-            echo "right_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.right.pan" "0,0,0")
-            echo "right_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.right.light_elevation" "10")
-            echo "right_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
-            
-            # Front view
-            PREFIX=$(extract_value "views.front.prefix" "6_")
-            echo "front_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.front.suffix" "_front")
-            echo "front_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.front.zoom_factor" "1.0")
-            echo "front_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.front.rotate" "0,0,0")
-            echo "front_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.front.pan" "0,0,0")
-            echo "front_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.front.light_elevation" "10")
-            echo "front_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
-            
-            # Back view
-            PREFIX=$(extract_value "views.back.prefix" "7_")
-            echo "back_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
-            
-            SUFFIX=$(extract_value "views.back.suffix" "_back")
-            echo "back_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
-            
-            ZOOM=$(extract_value "views.back.zoom_factor" "1.0")
-            echo "back_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
-            
-            ROTATE=$(extract_value "views.back.rotate" "0,0,0")
-            echo "back_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
-            
-            PAN=$(extract_value "views.back.pan" "0,0,0")
-            echo "back_view_pan=$PAN" >> $GITHUB_OUTPUT
-            
-            LIGHT=$(extract_value "views.back.light_elevation" "10")
-            echo "back_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
+            # If no views found in config, use default views
+            if [ -z "$VIEW_NAMES" ]; then
+              VIEW_NAMES="side top bottom left right front back"
+            fi
+          else
+            # Default views if config file doesn't exist
+            VIEW_NAMES="side top bottom left right front back"
           fi
+          
+          # Output the list of views
+          echo "available_views=$VIEW_NAMES" >> $GITHUB_OUTPUT
+          
+          # Set default values for all possible views
+          for view in $VIEW_NAMES; do
+            # Set default values based on view name
+            case $view in
+              "side") 
+                DEFAULT_PREFIX="1_"
+                DEFAULT_SUFFIX="_side"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,0,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="30"
+                ;;
+              "top") 
+                DEFAULT_PREFIX="2_"
+                DEFAULT_SUFFIX="_top"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,0,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="60"
+                ;;
+              "bottom") 
+                DEFAULT_PREFIX="3_"
+                DEFAULT_SUFFIX="_bottom"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,0,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="60"
+                ;;
+              "left") 
+                DEFAULT_PREFIX="4_"
+                DEFAULT_SUFFIX="_left"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,90,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="10"
+                ;;
+              "right") 
+                DEFAULT_PREFIX="5_"
+                DEFAULT_SUFFIX="_right"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,-90,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="10"
+                ;;
+              "front") 
+                DEFAULT_PREFIX="6_"
+                DEFAULT_SUFFIX="_front"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,0,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="10"
+                ;;
+              "back") 
+                DEFAULT_PREFIX="7_"
+                DEFAULT_SUFFIX="_back"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,0,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="10"
+                ;;
+              *)
+                # Default values for custom views
+                DEFAULT_PREFIX="1_"
+                DEFAULT_SUFFIX="_$view"
+                DEFAULT_ZOOM="1.0"
+                DEFAULT_ROTATE="0,0,0"
+                DEFAULT_PAN="0,0,0"
+                DEFAULT_LIGHT="30"
+                ;;
+            esac
+            
+            # Extract custom values if they exist in config, otherwise use defaults
+            PREFIX=$(extract_value "views.$view.prefix" "$DEFAULT_PREFIX")
+            SUFFIX=$(extract_value "views.$view.suffix" "$DEFAULT_SUFFIX")
+            ZOOM=$(extract_value "views.$view.zoom_factor" "$DEFAULT_ZOOM")
+            ROTATE=$(extract_value "views.$view.rotate" "$DEFAULT_ROTATE")
+            PAN=$(extract_value "views.$view.pan" "$DEFAULT_PAN")
+            LIGHT=$(extract_value "views.$view.light_elevation" "$DEFAULT_LIGHT")
+            # Extract custom side parameter (if specified)
+            SIDE=$(extract_value "views.$view.side" "default")
+            
+            # Output these values with the view name in the key
+            echo "${view}_view_prefix=$PREFIX" >> $GITHUB_OUTPUT
+            echo "${view}_view_suffix=$SUFFIX" >> $GITHUB_OUTPUT
+            echo "${view}_view_zoom_factor=$ZOOM" >> $GITHUB_OUTPUT
+            echo "${view}_view_rotate=$ROTATE" >> $GITHUB_OUTPUT
+            echo "${view}_view_pan=$PAN" >> $GITHUB_OUTPUT
+            echo "${view}_view_light_elevation=$LIGHT" >> $GITHUB_OUTPUT
+            echo "${view}_view_side=$SIDE" >> $GITHUB_OUTPUT
+          done
 
       # Pull Docker image before using it
       - name: Pull KiCad Docker image
