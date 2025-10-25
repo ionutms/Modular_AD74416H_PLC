@@ -96,6 +96,7 @@ jobs:
           chmod -R 777 "$PROJECT_NAME/docs"
           echo "Created project-specific directories at $PROJECT_NAME/docs"
 
+      # Extract configuration values - adapted for nested structure
       - name: Extract KiCad configuration
         id: kicad-config
         if: steps.find-files.outputs.pcb_found == 'true'
@@ -107,7 +108,7 @@ jobs:
             local default=$2
             
             if [ -f ".github/kicad-config.yml" ]; then
-              # Use awk to parse nested YAML (simple 2-level nesting)
+              # Use awk to parse nested YAML (3-level nesting)
               local value=$(awk -v path="$path" '
                 BEGIN { 
                   split(path, parts, ".")
@@ -128,12 +129,18 @@ jobs:
                   if ($1 == level2":") in_view = 1
                 }
                 in_view && /^    [a-z_]+:/ {
+                  # Extract the parameter name and value
                   gsub(/^    /, "")
-                  gsub(/:/, "")
-                  if ($1 == level3) {
-                    sub(/^[^:]+: */, "")
-                    gsub(/^["\047]|["\047]$/, "")
-                    print
+                  param_name = $1
+                  gsub(/:/, "", param_name)
+                  
+                  if (param_name == level3) {
+                    # Extract value after the colon
+                    value_part = $0
+                    sub(/^[^:]+: */, "", value_part)
+                    # Remove leading/trailing quotes
+                    gsub(/^["\047]|["\047]$/, "", value_part)
+                    print value_part
                     exit
                   }
                 }
