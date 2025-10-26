@@ -143,16 +143,16 @@ jobs:
                 
                 case "$ACTION" in
                   hide)
-                    GLOBAL_MODS="$GLOBAL_MODS && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --hide"
+                    GLOBAL_MODS="$GLOBAL_MODS && echo \"[GLOBAL] Hiding $REFERENCE\" && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --hide"
                     ;;
                   show)
-                    GLOBAL_MODS="$GLOBAL_MODS && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --show"
+                    GLOBAL_MODS="$GLOBAL_MODS && echo \"[GLOBAL] Showing $REFERENCE\" && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --show"
                     ;;
                   offset)
                     OFFSET_X=$(yq eval ".global_modifications[$i].offset_x // 0" "$CONFIG_FILE")
                     OFFSET_Y=$(yq eval ".global_modifications[$i].offset_y // 0" "$CONFIG_FILE")
                     OFFSET_Z=$(yq eval ".global_modifications[$i].offset_z // 0" "$CONFIG_FILE")
-                    GLOBAL_MODS="$GLOBAL_MODS && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --offset $OFFSET_X $OFFSET_Y $OFFSET_Z"
+                    GLOBAL_MODS="$GLOBAL_MODS && echo \"[GLOBAL] Offsetting $REFERENCE by ($OFFSET_X, $OFFSET_Y, $OFFSET_Z)\" && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --offset $OFFSET_X $OFFSET_Y $OFFSET_Z"
                     ;;
                 esac
               done
@@ -174,16 +174,16 @@ jobs:
                   
                   case "$ACTION" in
                     hide)
-                      VIEW_MODS="$VIEW_MODS && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --hide"
+                      VIEW_MODS="$VIEW_MODS && echo \"[VIEW:$VIEW] Hiding $REFERENCE\" && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --hide"
                       ;;
                     show)
-                      VIEW_MODS="$VIEW_MODS && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --show"
+                      VIEW_MODS="$VIEW_MODS && echo \"[VIEW:$VIEW] Showing $REFERENCE\" && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --show"
                       ;;
                     offset)
                       OFFSET_X=$(yq eval ".views.$VIEW.modifications[$i].offset_x // 0" "$CONFIG_FILE")
                       OFFSET_Y=$(yq eval ".views.$VIEW.modifications[$i].offset_y // 0" "$CONFIG_FILE")
                       OFFSET_Z=$(yq eval ".views.$VIEW.modifications[$i].offset_z // 0" "$CONFIG_FILE")
-                      VIEW_MODS="$VIEW_MODS && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --offset $OFFSET_X $OFFSET_Y $OFFSET_Z"
+                      VIEW_MODS="$VIEW_MODS && echo \"[VIEW:$VIEW] Offsetting $REFERENCE by ($OFFSET_X, $OFFSET_Y, $OFFSET_Z)\" && python3 /scripts/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --offset $OFFSET_X $OFFSET_Y $OFFSET_Z"
                       ;;
                   esac
                 done
