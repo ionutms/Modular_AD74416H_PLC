@@ -10,9 +10,6 @@ views:
     pan: '0,-3,0'
     light_elevation: 30
     side: 'top'  # KiCad side parameter (top, bottom, left, right, front, back)
-    modifications:
-      - reference: "M10"
-        action: "hide"
     
   top:
     prefix: '2_'
@@ -22,9 +19,6 @@ views:
     pan: '0,0,0'
     light_elevation: 60
     side: 'top'
-    modifications:
-      - reference: "M10"
-        action: "show"
     
   bottom:
     prefix: '3_'
