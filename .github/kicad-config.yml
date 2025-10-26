@@ -7,11 +7,22 @@ views:
     pan: '0,-3,0'
     light_elevation: 30
     side: 'top'
-    offset_footprints:
-      - reference: M10
-        x: 0
-        y: 0
-        z: 2
+    hide_footprints:
+      - M1
+      - M2
+      - M3
+      - M4
+      - M5
+      - M6
+      - M7
+      - M8
+      - M9
+      - M10
+      - M11
+      - M12
+      - M13
+      - M14
+      - M15
     
   top:
     prefix: '2_'
@@ -21,13 +32,6 @@ views:
     pan: '0,0,0'
     light_elevation: 60
     side: 'top'
-    offset_footprints:
-      - reference: M10
-        x: 0
-        y: 0
-        z: -2
-    hide_footprints:
-      - M10
     
   bottom:
     prefix: '3_'
@@ -37,8 +41,6 @@ views:
     pan: '0,0,0'
     light_elevation: 60
     side: 'bottom'
-    show_footprints:
-      - M10
     
   left:
     prefix: '4_'
@@ -69,15 +71,6 @@ views:
     
   back:
     prefix: '7_'
-    suffix: '_back'
-    zoom_factor: 0.6
-    rotate: '0,0,0'
-    pan: '0,-5,0'
-    light_elevation: 10
-    side: 'back'
-    
-  test:
-    prefix: '8_'
     suffix: '_back'
     zoom_factor: 0.6
     rotate: '0,0,0'
