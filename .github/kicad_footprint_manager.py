@@ -19,7 +19,6 @@ Usage:
 import argparse
 import re
 import sys
-import os
 from pathlib import Path
 
 
@@ -90,11 +89,8 @@ def replace_footprint_in_file(file_path, reference, new_footprint_code):
 
     new_content = content[:start_pos] + new_footprint_code + content[end_pos:]
 
-    # Write the file with proper flushing and syncing
     with open(file_path, "w", encoding="utf-8") as file:
         file.write(new_content)
-        file.flush()
-        os.fsync(file.fileno())
 
     print(f"Successfully replaced footprint for reference {reference}")
     return True
@@ -123,7 +119,6 @@ def add_hide_to_model(footprint_code):
             "Warning: This footprint already has "
             "(hide yes) in the model section."
         )
-        return footprint_code  # Return original if already has hide
 
     return modified_code
 
@@ -155,7 +150,6 @@ def remove_hide_from_model(footprint_code):
             "Note: This footprint does not have "
             "(hide yes) in the model section."
         )
-        return footprint_code  # Return original if no hide found
 
     return modified_code
 
@@ -276,13 +270,9 @@ if __name__ == "__main__":
         original_footprint = footprints[args.reference]["full_data"]
         modified_footprint = add_hide_to_model(original_footprint)
 
-        if replace_footprint_in_file(
+        replace_footprint_in_file(
             pcb_path, args.reference, modified_footprint
-        ):
-            print(f"File {pcb_path} has been updated and saved.")
-        else:
-            print(f"Failed to update {pcb_path}")
-            sys.exit(1)
+        )
     elif (
         args.show
         and args.reference
@@ -298,13 +288,9 @@ if __name__ == "__main__":
         original_footprint = footprints[args.reference]["full_data"]
         modified_footprint = remove_hide_from_model(original_footprint)
 
-        if replace_footprint_in_file(
+        replace_footprint_in_file(
             pcb_path, args.reference, modified_footprint
-        ):
-            print(f"File {pcb_path} has been updated and saved.")
-        else:
-            print(f"Failed to update {pcb_path}")
-            sys.exit(1)
+        )
     elif (
         args.offset
         and args.reference
@@ -322,13 +308,9 @@ if __name__ == "__main__":
             original_footprint, args.offset[0], args.offset[1], args.offset[2]
         )
 
-        if replace_footprint_in_file(
+        replace_footprint_in_file(
             pcb_path, args.reference, modified_footprint
-        ):
-            print(f"File {pcb_path} has been updated and saved.")
-        else:
-            print(f"Failed to update {pcb_path}")
-            sys.exit(1)
+        )
     else:
         _, footprints = parse_kicad_pcb(pcb_path)
         print(f"Found {len(footprints)} footprints in {pcb_path.name}:")
