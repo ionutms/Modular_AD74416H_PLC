@@ -77,6 +77,84 @@ views:
     light_elevation: 10
     side: 'back'
 
+  side_enclosure:
+    prefix: '8_'
+    suffix: '_side_enclosure'
+    zoom_factor: 0.3
+    rotate: '315,360,405'
+    pan: '0,-3,0'
+    light_elevation: 30
+    side: 'top'
+    show_footprints:
+      - M1
+      - M2
+      - M3
+      - M4
+      - M5
+      - M6
+      - M7
+      - M8
+      - M9
+      - M10
+      - M11
+      - M12
+      - M13
+      - M14
+    
+  top_enclosure:
+    prefix: '9_'
+    suffix: '_top_enclosure'
+    zoom_factor: 0.35
+    rotate: '0,0,0'
+    pan: '0,0,0'
+    light_elevation: 60
+    side: 'top'
+    
+  bottom_enclosure:
+    prefix: '10_'
+    suffix: '_bottom_enclosure'
+    zoom_factor: 0.35
+    rotate: '0,0,0'
+    pan: '0,0,0'
+    light_elevation: 60
+    side: 'bottom'
+    
+  left_enclosure:
+    prefix: '11_'
+    suffix: '_left_enclosure'
+    zoom_factor: 0.6
+    rotate: '0,0,0'
+    pan: '0,-5,0'
+    light_elevation: 10
+    side: 'left'
+    
+  right_enclosure:
+    prefix: '12_'
+    suffix: '_right_enclosure'
+    zoom_factor: 0.6
+    rotate: '0,0,0'
+    pan: '0,-5,0'
+    light_elevation: 10
+    side: 'right'
+    
+  front_enclosure:
+    prefix: '13_'
+    suffix: '_front_enclosure'
+    zoom_factor: 0.6
+    rotate: '0,0,0'
+    pan: '0,-5,0'
+    light_elevation: 10
+    side: 'front'
+    
+  back_enclosure:
+    prefix: '14_'
+    suffix: '_back_enclosure'
+    zoom_factor: 0.6
+    rotate: '0,0,0'
+    pan: '0,-5,0'
+    light_elevation: 10
+    side: 'back'
+
 # Default values for any unspecified parameters
 defaults:
   zoom_factor: 1.0
