@@ -6,7 +6,9 @@ views:
     rotate: '315,360,405'
     pan: '0,-3,0'
     light_elevation: 30
-    side: 'top'  # (top, bottom, left, right, front, back)
+    side: 'top'
+    hide_footprints:
+      - M10  # Hide M10 for the side view
     
   top:
     prefix: '2_'

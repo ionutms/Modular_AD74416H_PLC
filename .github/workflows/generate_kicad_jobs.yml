@@ -125,8 +125,22 @@ jobs:
             PAN=$(yq eval ".views.$VIEW.pan // .defaults.pan // \"0,0,0\"" "$CONFIG_FILE")
             LIGHT=$(yq eval ".views.$VIEW.light_elevation // .defaults.light_elevation // 60" "$CONFIG_FILE")
             SIDE=$(yq eval ".views.$VIEW.side // .defaults.side // \"top\"" "$CONFIG_FILE")
+            HIDE_FOOTPRINTS=$(yq eval ".views.$VIEW.hide_footprints // []" "$CONFIG_FILE")
             
-            # Build the command
+            # Handle footprint hiding for this view
+            if [ "$HIDE_FOOTPRINTS" != "[]" ] && [ "$HIDE_FOOTPRINTS" != "null" ]; then
+              FOOTPRINTS=$(echo "$HIDE_FOOTPRINTS" | yq eval '.[]' -)
+              for FOOTPRINT in $FOOTPRINTS; do
+                HIDE_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --hide"
+                if [ -z "$COMMANDS" ]; then
+                  COMMANDS="$HIDE_CMD"
+                else
+                  COMMANDS="$COMMANDS && $HIDE_CMD"
+                fi
+              done
+            fi
+            
+            # Build the render command
             CMD="kicad-cli pcb render /kicad_project/$PCB_FILE"
             CMD="$CMD -o \"/kicad_project/$PROJECT_NAME/docs/pictures/${PREFIX}${PROJECT_NAME}${SUFFIX}.png\""
             CMD="$CMD --background transparent"
@@ -142,6 +156,15 @@ jobs:
               COMMANDS="$CMD"
             else
               COMMANDS="$COMMANDS && $CMD"
+            fi
+            
+            # Handle footprint showing (restore) after this view
+            if [ "$HIDE_FOOTPRINTS" != "[]" ] && [ "$HIDE_FOOTPRINTS" != "null" ]; then
+              FOOTPRINTS=$(echo "$HIDE_FOOTPRINTS" | yq eval '.[]' -)
+              for FOOTPRINT in $FOOTPRINTS; do
+                SHOW_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --show"
+                COMMANDS="$COMMANDS && $SHOW_CMD"
+              done
             fi
           done
           
