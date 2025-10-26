@@ -22,7 +22,6 @@ views:
       - M12
       - M13
       - M14
-      - M15
     
   top:
     prefix: '2_'
