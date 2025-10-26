@@ -21,6 +21,11 @@ views:
     pan: '0,0,0'
     light_elevation: 60
     side: 'top'
+    offset_footprints:
+      - reference: M10
+        x: 0
+        y: 0
+        z: -2
     hide_footprints:
       - M10
     
