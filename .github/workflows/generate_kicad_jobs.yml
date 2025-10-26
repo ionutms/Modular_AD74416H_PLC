@@ -134,6 +134,15 @@ jobs:
           for VIEW in $VIEW_NAMES; do
             echo "Processing view: $VIEW"
             
+            # Extract render parameters with defaults
+            PREFIX=$(yq eval ".views.$VIEW.prefix // \"\"" "$CONFIG_FILE")
+            SUFFIX=$(yq eval ".views.$VIEW.suffix // \"_$VIEW\"" "$CONFIG_FILE")
+            ZOOM=$(yq eval ".views.$VIEW.zoom_factor // .defaults.zoom_factor // 1.0" "$CONFIG_FILE")
+            ROTATE=$(yq eval ".views.$VIEW.rotate // .defaults.rotate // \"0,0,0\"" "$CONFIG_FILE")
+            PAN=$(yq eval ".views.$VIEW.pan // .defaults.pan // \"0,0,0\"" "$CONFIG_FILE")
+            LIGHT=$(yq eval ".views.$VIEW.light_elevation // .defaults.light_elevation // 60" "$CONFIG_FILE")
+            SIDE=$(yq eval ".views.$VIEW.side // .defaults.side // \"top\"" "$CONFIG_FILE")
+            
             # Create a backup command at the start of each view
             BACKUP_CMD="cp /kicad_project/$PCB_FILE /kicad_project/${PCB_FILE}.backup"
             
@@ -194,17 +203,8 @@ jobs:
               fi
             fi
             
-            # Extract render parameters with defaults
-            PREFIX=$(yq eval ".views.$VIEW.prefix // \"\"" "$CONFIG_FILE")
-            SUFFIX=$(yq eval ".views.$VIEW.suffix // \"_$VIEW\"" "$CONFIG_FILE")
-            ZOOM=$(yq eval ".views.$VIEW.zoom_factor // .defaults.zoom_factor // 1.0" "$CONFIG_FILE")
-            ROTATE=$(yq eval ".views.$VIEW.rotate // .defaults.rotate // \"0,0,0\"" "$CONFIG_FILE")
-            PAN=$(yq eval ".views.$VIEW.pan // .defaults.pan // \"0,0,0\"" "$CONFIG_FILE")
-            LIGHT=$(yq eval ".views.$VIEW.light_elevation // .defaults.light_elevation // 60" "$CONFIG_FILE")
-            SIDE=$(yq eval ".views.$VIEW.side // .defaults.side // \"top\"" "$CONFIG_FILE")
-            
             # Build the render command
-            RENDER_CMD="echo '[RENDER] Generating $VIEW view' && kicad-cli pcb render /kicad_project/$PCB_FILE"
+            RENDER_CMD="kicad-cli pcb render /kicad_project/$PCB_FILE"
             RENDER_CMD="$RENDER_CMD -o \"/kicad_project/$PROJECT_NAME/docs/pictures/${PREFIX}${PROJECT_NAME}${SUFFIX}.png\""
             RENDER_CMD="$RENDER_CMD --background transparent"
             RENDER_CMD="$RENDER_CMD --quality high"
@@ -218,7 +218,13 @@ jobs:
             RESTORE_CMD="mv /kicad_project/${PCB_FILE}.backup /kicad_project/$PCB_FILE"
             
             # Combine all commands for this view
-            VIEW_COMMANDS="$BACKUP_CMD$GLOBAL_MODS$VIEW_MODS && $RENDER_CMD && $RESTORE_CMD"
+            # Only add modifications if they exist
+            if [ -n "$GLOBAL_MODS" ] || [ -n "$VIEW_MODS" ]; then
+              VIEW_COMMANDS="$BACKUP_CMD$GLOBAL_MODS$VIEW_MODS && $RENDER_CMD && $RESTORE_CMD"
+            else
+              # No modifications, just render directly
+              VIEW_COMMANDS="$RENDER_CMD"
+            fi
             
             # Add to commands list
             if [ -z "$COMMANDS" ]; then
