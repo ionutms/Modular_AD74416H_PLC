@@ -152,6 +152,16 @@ jobs:
           
           echo "Generated render commands for views: $VIEW_NAMES"
 
+      - name: Hide M10 footprint before rendering
+        if: steps.find-files.outputs.pcb_found == 'true'
+        run: |
+          PCB_FILE="${{ steps.find-files.outputs.pcb_file }}"
+          
+          if [ -f "$PCB_FILE" ]; then
+            echo "Hiding M10 footprint in $PCB_FILE"
+            python3 .github/kicad_footprint_manager.py "$PCB_FILE" M10 --hide || echo "Warning: Could not hide M10 footprint (may not exist)"
+          fi
+
       - name: Pull KiCad Docker image
         if: steps.find-files.outputs.project_found == 'true'
         run: docker pull ionutms/kicad_9:V1.1
