@@ -33,7 +33,7 @@ views:
     prefix: '4_'
     suffix: '_left'
     zoom_factor: 0.6
-    rotate: '0,90,0'
+    rotate: '0,0,0'
     pan: '0,-5,0'
     light_elevation: 10
     side: 'left'
@@ -42,7 +42,7 @@ views:
     prefix: '5_'
     suffix: '_right'
     zoom_factor: 0.6
-    rotate: '0,-90,0'
+    rotate: '0,0,0'
     pan: '0,-5,0'
     light_elevation: 10
     side: 'right'
@@ -58,6 +58,15 @@ views:
     
   back:
     prefix: '7_'
+    suffix: '_back'
+    zoom_factor: 0.6
+    rotate: '0,0,0'
+    pan: '0,-5,0'
+    light_elevation: 10
+    side: 'back'
+    
+  test:
+    prefix: '8_'
     suffix: '_back'
     zoom_factor: 0.6
     rotate: '0,0,0'
