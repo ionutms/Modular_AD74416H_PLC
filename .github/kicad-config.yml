@@ -1,6 +1,3 @@
-# KiCad Documentation Generation Configuration
-
-# View definitions - add or remove views as needed
 views:
   side:
     prefix: '1_'
@@ -9,7 +6,7 @@ views:
     rotate: '315,360,405'
     pan: '0,-3,0'
     light_elevation: 30
-    side: 'top'  # KiCad side parameter (top, bottom, left, right, front, back)
+    side: 'top'  # (top, bottom, left, right, front, back)
     
   top:
     prefix: '2_'
