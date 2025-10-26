@@ -264,6 +264,13 @@ jobs:
         if: steps.find-files.outputs.project_found == 'true'
         run: docker pull ionutms/kicad_9:V1.1
 
+      - name: Debug - Show M10 footprint structure
+        if: steps.find-files.outputs.pcb_found == 'true'
+        run: |
+          PCB_FILE="${{ steps.find-files.outputs.pcb_file }}"
+          echo "=== M10 Footprint Structure ==="
+          python3 .github/kicad_footprint_manager.py "$PCB_FILE" M10 --code || echo "M10 not found or error occurred"
+
       - name: Generate KiCad outputs
         if: steps.find-files.outputs.project_found == 'true'
         run: |
