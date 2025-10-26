@@ -220,35 +220,7 @@ jobs:
               COMMANDS="$COMMANDS && $CMD"
             fi
             
-            # Handle footprint showing (restore) after this view
-            if [ -n "$RESTORE_HIDE_FOOTPRINTS" ]; then
-              for FOOTPRINT in $RESTORE_HIDE_FOOTPRINTS; do
-                SHOW_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --show"
-                COMMANDS="$COMMANDS && $SHOW_CMD"
-              done
-            fi
-            
-            # Handle footprint hiding (restore) after this view
-            if [ -n "$RESTORE_SHOW_FOOTPRINTS" ]; then
-              for FOOTPRINT in $RESTORE_SHOW_FOOTPRINTS; do
-                HIDE_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --hide"
-                COMMANDS="$COMMANDS && $HIDE_CMD"
-              done
-            fi
-            
-            # Handle offset restoration after this view
-            if [ -n "$RESTORE_OFFSET_FOOTPRINTS" ]; then
-              IFS='|' read -ra OFFSET_ARRAY <<< "$RESTORE_OFFSET_FOOTPRINTS"
-              for OFFSET_ENTRY in "${OFFSET_ARRAY[@]}"; do
-                IFS=':' read -ra PARTS <<< "$OFFSET_ENTRY"
-                FOOTPRINT="${PARTS[0]}"
-                NEG_X="${PARTS[1]}"
-                NEG_Y="${PARTS[2]}"
-                NEG_Z="${PARTS[3]}"
-                RESTORE_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --offset $NEG_X $NEG_Y $NEG_Z"
-                COMMANDS="$COMMANDS && $RESTORE_CMD"
-              done
-            fi
+
           done
           
           # Save commands to output (properly escaped for multi-line)
@@ -263,13 +235,6 @@ jobs:
       - name: Pull KiCad Docker image
         if: steps.find-files.outputs.project_found == 'true'
         run: docker pull ionutms/kicad_9:V1.1
-
-      - name: Debug - Show M10 footprint structure
-        if: steps.find-files.outputs.pcb_found == 'true'
-        run: |
-          PCB_FILE="${{ steps.find-files.outputs.pcb_file }}"
-          echo "=== M10 Footprint Structure ==="
-          python3 .github/kicad_footprint_manager.py "$PCB_FILE" M10 --code || echo "M10 not found or error occurred"
 
       - name: Generate KiCad outputs
         if: steps.find-files.outputs.project_found == 'true'
