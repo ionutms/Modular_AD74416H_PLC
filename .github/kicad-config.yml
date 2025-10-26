@@ -7,8 +7,11 @@ views:
     pan: '0,-3,0'
     light_elevation: 30
     side: 'top'
-    hide_footprints:
-      - M10  # Hide M10 for the side view
+    offset_footprints:
+      - reference: M10
+        x: 0
+        y: 0
+        z: 2
     
   top:
     prefix: '2_'
@@ -18,6 +21,8 @@ views:
     pan: '0,0,0'
     light_elevation: 60
     side: 'top'
+    hide_footprints:
+      - M10
     
   bottom:
     prefix: '3_'
@@ -27,6 +32,8 @@ views:
     pan: '0,0,0'
     light_elevation: 60
     side: 'bottom'
+    show_footprints:
+      - M10
     
   left:
     prefix: '4_'
