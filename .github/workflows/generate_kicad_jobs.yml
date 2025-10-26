@@ -105,7 +105,18 @@ jobs:
           fi
           
           PROJECT_NAME="${{ steps.find-files.outputs.project_name }}"
+          PROJECT_DIR="${{ steps.find-files.outputs.project_dir }}"
           PCB_FILE="${{ steps.find-files.outputs.pcb_file }}"
+          
+          # Check if Python script exists in project directory
+          SCRIPT_FILE="$PROJECT_DIR/kicad_footprint_manager.py"
+          SCRIPT_EXISTS="false"
+          if [ -f "$SCRIPT_FILE" ]; then
+            SCRIPT_EXISTS="true"
+            echo "Found Python script at: $SCRIPT_FILE"
+          else
+            echo "Python script not found at: $SCRIPT_FILE"
+          fi
           
           # Initialize commands array
           COMMANDS=""
@@ -113,11 +124,77 @@ jobs:
           # Get all view names from the config
           VIEW_NAMES=$(yq eval '.views | keys | .[]' "$CONFIG_FILE")
           
+          # Check if global modifications exist
+          GLOBAL_MOD_COUNT=$(yq eval '.global_modifications | length' "$CONFIG_FILE" 2>/dev/null || echo "0")
+          if [ "$GLOBAL_MOD_COUNT" == "null" ]; then
+            GLOBAL_MOD_COUNT=0
+          fi
+          
           # Generate a command for each view
           for VIEW in $VIEW_NAMES; do
             echo "Processing view: $VIEW"
             
-            # Extract parameters with defaults
+            # Create a backup command at the start of each view
+            BACKUP_CMD="cp /kicad_project/$PCB_FILE /kicad_project/${PCB_FILE}.backup"
+            
+            # Apply global modifications if they exist
+            GLOBAL_MODS=""
+            if [ "$SCRIPT_EXISTS" == "true" ] && [ "$GLOBAL_MOD_COUNT" -gt 0 ]; then
+              echo "  Will apply $GLOBAL_MOD_COUNT global modification(s)"
+              for i in $(seq 0 $((GLOBAL_MOD_COUNT - 1))); do
+                REFERENCE=$(yq eval ".global_modifications[$i].reference" "$CONFIG_FILE")
+                ACTION=$(yq eval ".global_modifications[$i].action" "$CONFIG_FILE")
+                
+                case "$ACTION" in
+                  hide)
+                    GLOBAL_MODS="$GLOBAL_MODS && echo \"[GLOBAL] Hiding $REFERENCE\" && python3 /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --hide"
+                    ;;
+                  show)
+                    GLOBAL_MODS="$GLOBAL_MODS && echo \"[GLOBAL] Showing $REFERENCE\" && python3 /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --show"
+                    ;;
+                  offset)
+                    OFFSET_X=$(yq eval ".global_modifications[$i].offset_x // 0" "$CONFIG_FILE")
+                    OFFSET_Y=$(yq eval ".global_modifications[$i].offset_y // 0" "$CONFIG_FILE")
+                    OFFSET_Z=$(yq eval ".global_modifications[$i].offset_z // 0" "$CONFIG_FILE")
+                    GLOBAL_MODS="$GLOBAL_MODS && echo \"[GLOBAL] Offsetting $REFERENCE by ($OFFSET_X, $OFFSET_Y, $OFFSET_Z)\" && python3 /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --offset $OFFSET_X $OFFSET_Y $OFFSET_Z"
+                    ;;
+                esac
+              done
+            fi
+            
+            # Apply view-specific modifications
+            VIEW_MODS=""
+            if [ "$SCRIPT_EXISTS" == "true" ]; then
+              VIEW_MOD_COUNT=$(yq eval ".views.$VIEW.modifications | length" "$CONFIG_FILE" 2>/dev/null || echo "0")
+              if [ "$VIEW_MOD_COUNT" == "null" ]; then
+                VIEW_MOD_COUNT=0
+              fi
+              
+              if [ "$VIEW_MOD_COUNT" -gt 0 ]; then
+                echo "  Will apply $VIEW_MOD_COUNT view-specific modification(s)"
+                for i in $(seq 0 $((VIEW_MOD_COUNT - 1))); do
+                  REFERENCE=$(yq eval ".views.$VIEW.modifications[$i].reference" "$CONFIG_FILE")
+                  ACTION=$(yq eval ".views.$VIEW.modifications[$i].action" "$CONFIG_FILE")
+                  
+                  case "$ACTION" in
+                    hide)
+                      VIEW_MODS="$VIEW_MODS && echo \"[VIEW:$VIEW] Hiding $REFERENCE\" && python3 /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --hide"
+                      ;;
+                    show)
+                      VIEW_MODS="$VIEW_MODS && echo \"[VIEW:$VIEW] Showing $REFERENCE\" && python3 /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --show"
+                      ;;
+                    offset)
+                      OFFSET_X=$(yq eval ".views.$VIEW.modifications[$i].offset_x // 0" "$CONFIG_FILE")
+                      OFFSET_Y=$(yq eval ".views.$VIEW.modifications[$i].offset_y // 0" "$CONFIG_FILE")
+                      OFFSET_Z=$(yq eval ".views.$VIEW.modifications[$i].offset_z // 0" "$CONFIG_FILE")
+                      VIEW_MODS="$VIEW_MODS && echo \"[VIEW:$VIEW] Offsetting $REFERENCE by ($OFFSET_X, $OFFSET_Y, $OFFSET_Z)\" && python3 /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py /kicad_project/$PCB_FILE $REFERENCE --offset $OFFSET_X $OFFSET_Y $OFFSET_Z"
+                      ;;
+                  esac
+                done
+              fi
+            fi
+            
+            # Extract render parameters with defaults
             PREFIX=$(yq eval ".views.$VIEW.prefix // \"\"" "$CONFIG_FILE")
             SUFFIX=$(yq eval ".views.$VIEW.suffix // \"_$VIEW\"" "$CONFIG_FILE")
             ZOOM=$(yq eval ".views.$VIEW.zoom_factor // .defaults.zoom_factor // 1.0" "$CONFIG_FILE")
@@ -126,22 +203,28 @@ jobs:
             LIGHT=$(yq eval ".views.$VIEW.light_elevation // .defaults.light_elevation // 60" "$CONFIG_FILE")
             SIDE=$(yq eval ".views.$VIEW.side // .defaults.side // \"top\"" "$CONFIG_FILE")
             
-            # Build the command
-            CMD="kicad-cli pcb render /kicad_project/$PCB_FILE"
-            CMD="$CMD -o \"/kicad_project/$PROJECT_NAME/docs/pictures/${PREFIX}${PROJECT_NAME}${SUFFIX}.png\""
-            CMD="$CMD --background transparent"
-            CMD="$CMD --quality high"
-            CMD="$CMD --light-side-elevation $LIGHT"
-            CMD="$CMD --side $SIDE"
-            CMD="$CMD --rotate $ROTATE"
-            CMD="$CMD --pan $PAN"
-            CMD="$CMD --zoom $ZOOM"
+            # Build the render command
+            RENDER_CMD="echo \"[RENDER] Generating $VIEW view\" && kicad-cli pcb render /kicad_project/$PCB_FILE"
+            RENDER_CMD="$RENDER_CMD -o \"/kicad_project/$PROJECT_NAME/docs/pictures/${PREFIX}${PROJECT_NAME}${SUFFIX}.png\""
+            RENDER_CMD="$RENDER_CMD --background transparent"
+            RENDER_CMD="$RENDER_CMD --quality high"
+            RENDER_CMD="$RENDER_CMD --light-side-elevation $LIGHT"
+            RENDER_CMD="$RENDER_CMD --side $SIDE"
+            RENDER_CMD="$RENDER_CMD --rotate $ROTATE"
+            RENDER_CMD="$RENDER_CMD --pan $PAN"
+            RENDER_CMD="$RENDER_CMD --zoom $ZOOM"
+            
+            # Restore backup command
+            RESTORE_CMD="mv /kicad_project/${PCB_FILE}.backup /kicad_project/$PCB_FILE"
+            
+            # Combine all commands for this view
+            VIEW_COMMANDS="$BACKUP_CMD$GLOBAL_MODS$VIEW_MODS && $RENDER_CMD && $RESTORE_CMD"
             
             # Add to commands list
             if [ -z "$COMMANDS" ]; then
-              COMMANDS="$CMD"
+              COMMANDS="$VIEW_COMMANDS"
             else
-              COMMANDS="$COMMANDS && $CMD"
+              COMMANDS="$COMMANDS && $VIEW_COMMANDS"
             fi
           done
           
@@ -160,6 +243,7 @@ jobs:
         if: steps.find-files.outputs.project_found == 'true'
         run: |
           PROJECT_NAME="${{ steps.find-files.outputs.project_name }}"
+          PROJECT_DIR="${{ steps.find-files.outputs.project_dir }}"
           RENDER_COMMANDS="${{ steps.parse-config.outputs.render_commands }}"
           
           docker run --rm -u $(id -u):$(id -g) \
@@ -167,6 +251,16 @@ jobs:
             -e HOME=/tmp/home \
             ionutms/kicad_9:V1.1 \
             bash -c "set -e && \
+              # Copy Python script from .github to project directory if it exists
+              if [ -f '/kicad_project/.github/kicad_footprint_manager.py' ]; then
+                echo 'Copying Python script from .github to project directory' && \
+                cp /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PROJECT_DIR/ && \
+                echo 'Python script copied successfully' && \
+                ls -la /kicad_project/$PROJECT_DIR/kicad_footprint_manager.py
+              else
+                echo 'Python script not found in .github folder'
+              fi && \
+              
               mkdir -p /tmp/3D_Models_Vault && \
               git clone https://github.com/ionutms/3D_Models_Vault.git /tmp/3D_Models_Vault && \
               mkdir -p /tmp/home/.config/kicad/9.0/colors /tmp/home/.local/share/kicad/9.0/3rdparty/colors && \
@@ -184,7 +278,9 @@ jobs:
               fi && \
               
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ] && [ -n '$RENDER_COMMANDS' ]; then
-                $RENDER_COMMANDS
+                echo '=== Starting PCB render commands ===' && \
+                $RENDER_COMMANDS && \
+                echo '=== PCB render commands completed ==='
               fi && \
               
               if [ '${{ steps.find-files.outputs.pcb_found }}' == 'true' ]; then
