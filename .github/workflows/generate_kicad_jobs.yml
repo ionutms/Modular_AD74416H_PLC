@@ -189,10 +189,10 @@ jobs:
                   else
                     COMMANDS="$COMMANDS && $OFFSET_CMD"
                   fi
-                  # Mark for restoration (reverse offset after render)
-                  NEG_X=$(echo "$OFFSET_X * -1" | bc -l)
-                  NEG_Y=$(echo "$OFFSET_Y * -1" | bc -l)
-                  NEG_Z=$(echo "$OFFSET_Z * -1" | bc -l)
+                  # Mark for restoration (reverse offset after render) - use python for negation
+                  NEG_X=$(python3 -c "print(-1 * $OFFSET_X)")
+                  NEG_Y=$(python3 -c "print(-1 * $OFFSET_Y)")
+                  NEG_Z=$(python3 -c "print(-1 * $OFFSET_Z)")
                   if [ -z "$RESTORE_OFFSET_FOOTPRINTS" ]; then
                     RESTORE_OFFSET_FOOTPRINTS="$FOOTPRINT:$NEG_X:$NEG_Y:$NEG_Z"
                   else
@@ -221,11 +221,32 @@ jobs:
             fi
             
             # Handle footprint showing (restore) after this view
-            if [ "$HIDE_FOOTPRINTS" != "[]" ] && [ "$HIDE_FOOTPRINTS" != "null" ]; then
-              FOOTPRINTS=$(echo "$HIDE_FOOTPRINTS" | yq eval '.[]' -)
-              for FOOTPRINT in $FOOTPRINTS; do
+            if [ -n "$RESTORE_HIDE_FOOTPRINTS" ]; then
+              for FOOTPRINT in $RESTORE_HIDE_FOOTPRINTS; do
                 SHOW_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --show"
                 COMMANDS="$COMMANDS && $SHOW_CMD"
+              done
+            fi
+            
+            # Handle footprint hiding (restore) after this view
+            if [ -n "$RESTORE_SHOW_FOOTPRINTS" ]; then
+              for FOOTPRINT in $RESTORE_SHOW_FOOTPRINTS; do
+                HIDE_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --hide"
+                COMMANDS="$COMMANDS && $HIDE_CMD"
+              done
+            fi
+            
+            # Handle offset restoration after this view
+            if [ -n "$RESTORE_OFFSET_FOOTPRINTS" ]; then
+              IFS='|' read -ra OFFSET_ARRAY <<< "$RESTORE_OFFSET_FOOTPRINTS"
+              for OFFSET_ENTRY in "${OFFSET_ARRAY[@]}"; do
+                IFS=':' read -ra PARTS <<< "$OFFSET_ENTRY"
+                FOOTPRINT="${PARTS[0]}"
+                NEG_X="${PARTS[1]}"
+                NEG_Y="${PARTS[2]}"
+                NEG_Z="${PARTS[3]}"
+                RESTORE_CMD="python3 /kicad_project/.github/kicad_footprint_manager.py /kicad_project/$PCB_FILE $FOOTPRINT --offset $NEG_X $NEG_Y $NEG_Z"
+                COMMANDS="$COMMANDS && $RESTORE_CMD"
               done
             fi
           done
@@ -236,6 +257,8 @@ jobs:
           echo "EOF" >> $GITHUB_OUTPUT
           
           echo "Generated render commands for views: $VIEW_NAMES"
+          echo "=== Full command chain ==="
+          echo "$COMMANDS"
 
       - name: Pull KiCad Docker image
         if: steps.find-files.outputs.project_found == 'true'
