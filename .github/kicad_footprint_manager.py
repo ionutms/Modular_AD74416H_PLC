@@ -106,32 +106,18 @@ def add_hide_to_model(footprint_code):
         str: The modified footprint code
 
     """
-    # Check if (hide yes) already exists
-    hide_pattern = r'\(model\s+"[^"]+"\s*\n\s*\(hide\s+yes\s*\)'
+    pattern = r'(\(model\s+"[^"]+"\s*\n\s*)(\(\s*offset)'
+
+    def replace_func(match):
+        return match.group(1) + "(hide yes)\n\t\t\t" + match.group(2)
+
+    modified_code = re.sub(pattern, replace_func, footprint_code)
+
+    hide_pattern = r'\(model\s+"[^"]+"\s*\n\s*\t*\s*\(\s*hide\s+yes\s*\)'
     if re.search(hide_pattern, footprint_code):
         print(
             "Warning: This footprint already has "
             "(hide yes) in the model section."
-        )
-        return footprint_code
-
-    # Pattern to match model line and insert (hide yes) before offset/scale/rotate
-    pattern = r'(\(model\s+"[^"]+"\s*\n)(\s*)(\((?:offset|scale|rotate))'
-
-    def replace_func(match):
-        return (
-            match.group(1)
-            + match.group(2)
-            + "(hide yes)\n"
-            + match.group(2)
-            + match.group(3)
-        )
-
-    modified_code = re.sub(pattern, replace_func, footprint_code)
-
-    if modified_code == footprint_code:
-        print(
-            "Warning: Could not find suitable location to insert (hide yes)"
         )
 
     return modified_code
@@ -147,12 +133,19 @@ def remove_hide_from_model(footprint_code):
         str: The modified footprint code
 
     """
-    # Pattern to match and remove (hide yes) line
-    pattern = r"\n\s*\(hide\s+yes\s*\)"
+    pattern = (
+        r'(\(model\s+"[^"]+"\s*\n\s*)'
+        r"(\t*\s*\(\s*hide\s+yes\s*\)\s*\n\s*)"
+        r"(\(\s*offset)"
+    )
 
-    modified_code = re.sub(pattern, "", footprint_code)
+    def replace_func(match):
+        return match.group(1) + match.group(3)
 
-    if modified_code == footprint_code:
+    modified_code = re.sub(pattern, replace_func, footprint_code)
+
+    hide_pattern = r'\(model\s+"[^"]+"\s*\n\s*\t*\s*\(\s*hide\s+yes\s*\)'
+    if not re.search(hide_pattern, footprint_code):
         print(
             "Note: This footprint does not have "
             "(hide yes) in the model section."
@@ -175,7 +168,7 @@ def offset_model_coordinates(footprint_code, dx, dy, dz):
 
     """
     pattern = (
-        r'(\(model\s+"[^"]+"\s*\n\s*(?:\(hide\s+yes\s*\)\s*\n\s*)?'
+        r'(\(model\s+"[^"]+"\s*\n\s*(?:\(hide yes\)\s*\n\s*)?'
         r"\(offset\s*\n\s*\(xyz\s+)"
         r"([+-]?\d+\.?\d*)\s+"
         r"([+-]?\d+\.?\d*)\s+"
