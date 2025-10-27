@@ -158,7 +158,7 @@ views:
   side_exploded_1:
     prefix: '15_'
     suffix: '_side_exploded_1'
-    zoom_factor: 0.36
+    zoom_factor: 0.38
     rotate: '315,360,405'
     pan: '0,-1.5,0'
     light_elevation: 30
@@ -178,39 +178,39 @@ views:
       - U3
       - U4
 
-  # side_exploded_2:
-  #   prefix: '16_'
-  #   suffix: '_side_exploded_2'
-  #   zoom_factor: 0.26
-  #   rotate: '315,360,405'
-  #   pan: '0,-7,0'
-  #   light_elevation: 30
-  #   side: 'top'
-  #   show_footprints:
-  #     - U2
-  #     - U3
-  #     - U4
-  #     - M6
-  #     - M7
-  #     - M8
-  #     - M9
-  #   offset_footprints:
-  #     - reference: M6
-  #       x: 0
-  #       y: 0
-  #       z: 40
-  #     - reference: M7
-  #       x: 0
-  #       y: 0
-  #       z: 40
-  #     - reference: M8
-  #       x: 0
-  #       y: 0
-  #       z: 40
-  #     - reference: M9
-  #       x: 0
-  #       y: 0
-  #       z: 40
+  side_exploded_2:
+    prefix: '16_'
+    suffix: '_side_exploded_2'
+    zoom_factor: 0.26
+    rotate: '315,360,405'
+    pan: '0,-7,0'
+    light_elevation: 30
+    side: 'top'
+    show_footprints:
+      - U2
+      - U3
+      - U4
+      - M6
+      - M7
+      - M8
+      - M9
+    offset_footprints:
+      - reference: M6
+        x: 0
+        y: 0
+        z: 30
+      - reference: M7
+        x: 0
+        y: 0
+        z: 30
+      - reference: M8
+        x: 0
+        y: 0
+        z: 30
+      - reference: M9
+        x: 0
+        y: 0
+        z: 30
 
   # side_exploded_3:
   #   prefix: '17_'
