@@ -262,7 +262,7 @@ views:
       - reference: M10
         x: 0
         y: 0
-        z: -80
+        z: 80
 
 # Default values for any unspecified parameters
 defaults:
