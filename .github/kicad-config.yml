@@ -160,7 +160,7 @@ views:
     suffix: '_side_exploded_1'
     zoom_factor: 0.3
     rotate: '315,360,405'
-    pan: '0,-3,0'
+    pan: '0,-2,0'
     light_elevation: 30
     side: 'top'
     hide_footprints:
@@ -183,7 +183,7 @@ views:
     suffix: '_side_exploded_2'
     zoom_factor: 0.26
     rotate: '315,360,405'
-    pan: '0,-6,0'
+    pan: '0,-7,0'
     light_elevation: 30
     side: 'top'
     show_footprints:
@@ -246,9 +246,9 @@ views:
   side_exploded_4:
     prefix: '18_'
     suffix: '_side_exploded_4'
-    zoom_factor: 0.2
+    zoom_factor: 0.18
     rotate: '315,360,405'
-    pan: '0,-4,0'
+    pan: '0,-5,0'
     light_elevation: 30
     side: 'top'
     show_footprints:
