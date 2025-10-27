@@ -164,7 +164,6 @@ jobs:
             }
 
       - name: Run Symbol Check
-        if: steps.check-files.outputs.files_generated == 'true'
         run: |
           SOURCE_REPO="${{ github.repository }}"
           SOURCE_REF="${{ github.sha }}"
