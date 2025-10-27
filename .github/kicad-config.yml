@@ -243,6 +243,27 @@ views:
         y: 40
         z: 0
 
+  side_exploded_4:
+    prefix: '18_'
+    suffix: '_side_exploded_4'
+    zoom_factor: 0.3
+    rotate: '315,360,405'
+    pan: '0,-3,0'
+    light_elevation: 30
+    side: 'top'
+    show_footprints:
+      - M1
+      - M10
+    offset_footprints:
+      - reference: M1
+        x: 0
+        y: 0
+        z: -40
+      - reference: M10
+        x: 0
+        y: 0
+        z: -80
+
 # Default values for any unspecified parameters
 defaults:
   zoom_factor: 1.0
