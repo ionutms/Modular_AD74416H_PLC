@@ -181,7 +181,7 @@ views:
   side_exploded_2:
     prefix: '16_'
     suffix: '_side_exploded_2'
-    zoom_factor: 0.28
+    zoom_factor: 0.26
     rotate: '315,360,405'
     pan: '0,-3,0'
     light_elevation: 30
@@ -215,7 +215,7 @@ views:
   side_exploded_3:
     prefix: '17_'
     suffix: '_side_exploded_3'
-    zoom_factor: 0.28
+    zoom_factor: 0.26
     rotate: '315,360,405'
     pan: '0,-3,0'
     light_elevation: 30
@@ -246,7 +246,7 @@ views:
   side_exploded_4:
     prefix: '18_'
     suffix: '_side_exploded_4'
-    zoom_factor: 0.26
+    zoom_factor: 0.24
     rotate: '315,360,405'
     pan: '0,-3,0'
     light_elevation: 30
