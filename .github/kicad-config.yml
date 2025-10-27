@@ -155,6 +155,60 @@ views:
     light_elevation: 10
     side: 'back'
 
+  side_exploded_1:
+    prefix: '15_'
+    suffix: '_side_exploded_1'
+    zoom_factor: 0.3
+    rotate: '315,360,405'
+    pan: '0,-3,0'
+    light_elevation: 30
+    side: 'top'
+    hide_footprints:
+      - M1
+      - M6
+      - M7
+      - M8
+      - M9
+      - M10
+      - M11
+      - M12
+      - M13
+      - M14
+      - U2
+      - U3
+      - U4
+
+  side_exploded_2:
+    prefix: '15_'
+    suffix: '_side_exploded_2'
+    zoom_factor: 0.3
+    rotate: '315,360,405'
+    pan: '0,-3,0'
+    light_elevation: 30
+    side: 'top'
+    show_footprints:
+      - M6
+      - M7
+      - M8
+      - M9
+    offset_footprints:
+      - reference: M6
+        x: 0
+        y: 0
+        z: 5
+      - reference: M7
+        x: 0
+        y: 0
+        z: 5
+      - reference: M8
+        x: 0
+        y: 0
+        z: 5
+      - reference: M9
+        x: 0
+        y: 0
+        z: 5
+
 # Default values for any unspecified parameters
 defaults:
   zoom_factor: 1.0
