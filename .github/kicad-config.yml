@@ -26,7 +26,7 @@ views:
   top:
     prefix: '2_'
     suffix: '_top'
-    zoom_factor: 0.38
+    zoom_factor: 0.42
     rotate: '0,0,0'
     pan: '0,0,0'
     light_elevation: 60
@@ -35,7 +35,7 @@ views:
   bottom:
     prefix: '3_'
     suffix: '_bottom'
-    zoom_factor: 0.38
+    zoom_factor: 0.42
     rotate: '0,0,0'
     pan: '0,0,0'
     light_elevation: 60
@@ -44,7 +44,7 @@ views:
   left:
     prefix: '4_'
     suffix: '_left'
-    zoom_factor: 0.6
+    zoom_factor: 0.68
     rotate: '0,0,0'
     pan: '0,-5,0'
     light_elevation: 10
@@ -53,7 +53,7 @@ views:
   right:
     prefix: '5_'
     suffix: '_right'
-    zoom_factor: 0.6
+    zoom_factor: 0.68
     rotate: '0,0,0'
     pan: '0,-5,0'
     light_elevation: 10
@@ -62,7 +62,7 @@ views:
   front:
     prefix: '6_'
     suffix: '_front'
-    zoom_factor: 0.64
+    zoom_factor: 0.68
     rotate: '0,0,0'
     pan: '0,-6,0'
     light_elevation: 10
@@ -71,7 +71,7 @@ views:
   back:
     prefix: '7_'
     suffix: '_back'
-    zoom_factor: 0.64
+    zoom_factor: 0.68
     rotate: '0,0,0'
     pan: '0,-6,0'
     light_elevation: 10
