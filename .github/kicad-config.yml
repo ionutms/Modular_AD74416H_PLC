@@ -194,14 +194,6 @@ views:
       - M7
       - M8
       - M9
-    # hide_footprints_by_index:
-    #   - reference: U2
-    #     index: 0  # Hide first 3D model of U2
-    #   - reference: U3
-    #     index: 1  # Hide second 3D model of U3
-    # show_footprints_by_index:
-    #   - reference: U4
-    #     index: 0  # Show first 3D model of U4
     offset_footprints:
       - reference: M6
         x: 0
@@ -219,12 +211,6 @@ views:
         x: 0
         y: 0
         z: 30
-    # offset_footprints_by_index:
-    #   - reference: U2
-    #     index: 0
-    #     x: 5
-    #     y: 0
-    #     z: 0  # Offset first 3D model of U2
 
   side_exploded_3:
     prefix: '17_'
