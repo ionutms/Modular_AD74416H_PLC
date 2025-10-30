@@ -187,13 +187,18 @@ views:
     light_elevation: 30
     side: 'top'
     show_footprints:
-      - U2
-      - U3
-      - U4
       - M6
       - M7
       - M8
       - M9
+    show_footprints_by_index:
+      - reference: U2
+        index: 0
+      - reference: U3
+        index: 0
+      - reference: U4
+        index: 0
+
     offset_footprints:
       - reference: M6
         x: 0
