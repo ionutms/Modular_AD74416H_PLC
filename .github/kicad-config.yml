@@ -198,6 +198,20 @@ views:
         index: 0
       - reference: U4
         index: 0
+    hide_footprints_by_index:
+      - reference: U2
+        index: 0
+      - reference: U3
+        index: 0
+      - reference: U4
+        index: 0
+    show_footprints_by_index:
+      - reference: U2
+        index: 2
+      - reference: U3
+        index: 2
+      - reference: U4
+        index: 2
 
     offset_footprints:
       - reference: M6
@@ -268,20 +282,6 @@ views:
         x: 0
         y: 0
         z: 60
-    hide_footprints_by_index:
-      - reference: U2
-        index: 0
-      - reference: U3
-        index: 0
-      - reference: U4
-        index: 0
-    show_footprints_by_index:
-      - reference: U2
-        index: 2
-      - reference: U3
-        index: 2
-      - reference: U4
-        index: 2
 
 # Default values for any unspecified parameters
 defaults:
