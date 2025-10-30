@@ -4593,13 +4593,25 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
 			(offset
-				(xyz 0 0 -1.27)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
 				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h.step"
+			(hide yes)
+			(offset
+				(xyz 4.0 4.0 8.0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
 			)
 		)
 	)
