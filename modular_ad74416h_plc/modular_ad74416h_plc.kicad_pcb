@@ -643,7 +643,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "9daef9b2-8183-4008-b403-d8245c6ef381")
+			(uuid "64e067b4-d1f0-472c-8a42-4808177e1ccb")
 		)
 		(fp_line
 			(start 7.7978 8.33014)
@@ -653,7 +653,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "f455a41c-c4fa-4de2-aea3-9684f4f6b71c")
+			(uuid "04963383-7e10-4a85-991c-bc533c08d936")
 		)
 		(fp_line
 			(start -8.3312 -7.79886)
@@ -663,7 +663,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "8c0c66de-a86b-4a24-9bc8-c4f3d1cd744d")
+			(uuid "1c31ca4a-dc17-44e1-ad25-93d9a0de3ad2")
 		)
 		(fp_line
 			(start 7.7978 -7.79886)
@@ -673,7 +673,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ff426d17-0692-4dbc-bd23-0e389597418e")
+			(uuid "54ce3256-3ff5-48cd-bcc9-dfedcaf8faa5")
 		)
 		(fp_arc
 			(start -0.0312 8.33014)
@@ -684,7 +684,7 @@
 				(type default)
 			)
 			(layer "Cmts.User")
-			(uuid "3748888a-9a5f-4185-9ecd-6707e728c8f4")
+			(uuid "4667f999-851e-4444-9809-d48114cfb6ff")
 		)
 		(fp_circle
 			(center 0 0)
@@ -695,7 +695,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "4a8879e9-fd9a-4d70-945b-c076eca486c4")
+			(uuid "25f9af9e-8964-427a-b091-55f372b7dddf")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 270)
@@ -711,6 +711,18 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400_v2.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 10.668)
 			)
@@ -790,7 +802,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "93fad671-18a5-4a7f-b785-c605bf15a18a")
+			(uuid "774c96fb-20b8-444d-90ae-9ce0ce67a2fe")
 		)
 		(fp_line
 			(start -8.3312 -7.79886)
@@ -800,7 +812,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "c06b8d1c-4331-471b-ac11-48b0c50ba204")
+			(uuid "a842465c-da7f-4a76-8358-9a4a4eed428c")
 		)
 		(fp_line
 			(start 7.7978 8.33014)
@@ -810,7 +822,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "f6306c28-a1a5-412e-b8c7-356670c18af8")
+			(uuid "a0e0dd44-1117-411e-bd35-305718b839bc")
 		)
 		(fp_line
 			(start -0.0312 8.33014)
@@ -820,7 +832,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "642383d5-0158-46cc-b5c8-bda1d1769926")
+			(uuid "02f2b27e-53ad-4dcb-9e2b-5b1bdd25e25d")
 		)
 		(fp_arc
 			(start -0.0312 8.33014)
@@ -831,7 +843,7 @@
 				(type default)
 			)
 			(layer "Cmts.User")
-			(uuid "81d0100a-60f2-4aca-a5c8-0d09d106aae2")
+			(uuid "7b820fe8-a328-46b9-a5d2-4f8eda17d92c")
 		)
 		(fp_circle
 			(center 0 0)
@@ -842,7 +854,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "354801a0-396f-49cf-8ff6-d511b9324b1f")
+			(uuid "3e30c4bf-5851-4bcb-9130-06096be1a777")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 90)
@@ -858,6 +870,18 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400_v2.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 10.668)
 			)
@@ -1858,7 +1882,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "b6c1b909-42c0-46e8-aa86-5cd3c9685287")
+			(uuid "233d786f-d8b7-40a5-91e9-2d05310dbc8d")
 		)
 		(fp_line
 			(start 7.7978 -7.79886)
@@ -1868,7 +1892,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "1cc4cc0e-b88f-45c9-9097-6602de9dca6b")
+			(uuid "09580738-aed5-4b9f-91dd-e8fe30521304")
 		)
 		(fp_line
 			(start -0.0312 8.33014)
@@ -1878,7 +1902,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "6a3cf064-9884-4aa8-bf9d-a687944a9499")
+			(uuid "6aff8bee-db61-428c-8813-46b862d42f7c")
 		)
 		(fp_line
 			(start -8.3312 -7.79886)
@@ -1888,7 +1912,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "c4f9d91c-f502-4a45-a874-db9077c1103a")
+			(uuid "4ea1b286-bd0c-4724-ba45-0c114b6748c5")
 		)
 		(fp_arc
 			(start -0.0312 8.33014)
@@ -1899,7 +1923,7 @@
 				(type default)
 			)
 			(layer "Cmts.User")
-			(uuid "2b5f2712-6d9f-4a05-ad81-c2d8fc2b5777")
+			(uuid "968728b6-3cf2-48a0-9d33-f2c0e71fe837")
 		)
 		(fp_circle
 			(center 0 0)
@@ -1910,7 +1934,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "67113a9d-f5dc-4f34-9fb3-7da5217740c7")
+			(uuid "4aa128fe-efd3-49ef-b8b0-93f0412f77e3")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 180)
@@ -1926,6 +1950,18 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400_v2.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 10.668)
 			)
@@ -2486,7 +2522,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "58a06822-2d92-46fb-a634-e9e9d16d169d")
+			(uuid "229b83ce-99d2-4a92-9bd6-96717467ff64")
 		)
 		(fp_line
 			(start -0.0312 8.33014)
@@ -2496,7 +2532,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "560de581-9827-4531-a80c-68083e1fbb49")
+			(uuid "650e2ffd-cd3c-47cd-ba21-063f99e6a2a8")
 		)
 		(fp_line
 			(start 7.7978 -7.79886)
@@ -2506,7 +2542,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ab91d3ef-2cec-4d0c-ab07-93c704242bd7")
+			(uuid "c4d86b5a-ea89-4ee2-a82a-93bcf2a55527")
 		)
 		(fp_line
 			(start 7.7978 8.33014)
@@ -2516,7 +2552,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "4655c72b-656c-457e-95b9-e87155f8e2b1")
+			(uuid "fc2edfab-5a3e-49e1-a38f-6887d696ff61")
 		)
 		(fp_arc
 			(start -0.0312 8.33014)
@@ -2527,7 +2563,7 @@
 				(type default)
 			)
 			(layer "Cmts.User")
-			(uuid "cbfebb48-6f88-4686-9ad8-4e06661f8801")
+			(uuid "c1342ad0-13db-442f-855e-b627020d7059")
 		)
 		(fp_circle
 			(center 0 0)
@@ -2538,7 +2574,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "c1b281cc-c3c8-480f-afcf-1726a75df27d")
+			(uuid "e5efde7d-0728-4ac9-9706-f31d097f00fd")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
@@ -2554,6 +2590,18 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400.step"
+			(offset
+				(xyz 0 0 10.668)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/mechanical/2203400_v2.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 10.668)
 			)
