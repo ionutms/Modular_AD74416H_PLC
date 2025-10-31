@@ -291,6 +291,24 @@ views:
         x: 0
         y: 0
         z: 40
+    hide_footprints_by_index:
+      - reference: M6
+        index: 1
+      - reference: M7
+        index: 1
+      - reference: M8
+        index: 1
+      - reference: M9
+        index: 1
+    show_footprints_by_index:
+      - reference: M6
+        index: 2
+      - reference: M7
+        index: 2
+      - reference: M8
+        index: 2
+      - reference: M9
+        index: 2
 
 # Default values for any unspecified parameters
 defaults:
