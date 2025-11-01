@@ -198,6 +198,8 @@ views:
         index: 0
       - reference: U4
         index: 0
+      - reference: MOD1
+        index: 0
       - reference: M6
         index: 0
       - reference: M7
@@ -212,6 +214,8 @@ views:
       - reference: U3
         index: 2
       - reference: U4
+        index: 2
+      - reference: MOD1
         index: 2
       - reference: M6
         index: 1
