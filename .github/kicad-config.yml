@@ -191,11 +191,6 @@ views:
     pan: '0,-7,0'
     light_elevation: 30
     side: 'top'
-    show_footprints:
-      - M6
-      - M7
-      - M8
-      - M9
     hide_footprints_by_index:
       - reference: U2
         index: 0
