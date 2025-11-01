@@ -2839,7 +2839,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "129a5679-cfdd-4947-8b2a-67b619e80916")
+			(uuid "5b624d48-fbf5-494b-b12f-a3cfc05bb79a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.54 0)
@@ -2865,6 +2865,30 @@
 			)
 			(rotate
 				(xyz -90 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module_v2.step"
+			(hide yes)
+			(offset
+				(xyz 0 0 19.685)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module_v3.step"
+			(hide yes)
+			(offset
+				(xyz 0 0 19.685)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
 			)
 		)
 	)
