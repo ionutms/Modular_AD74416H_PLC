@@ -91,15 +91,20 @@ views:
       - M3
       - M4
       - M5
-      - M6
-      - M7
-      - M8
-      - M9
       - M10
       - M11
       - M12
       - M13
       - M14
+    show_footprints_by_index:
+      - reference: M6
+        index: 0
+      - reference: M7
+        index: 0
+      - reference: M8
+        index: 0
+      - reference: M9
+        index: 0
     
   top_enclosure:
     prefix: '9_'
