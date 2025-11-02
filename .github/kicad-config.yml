@@ -288,6 +288,30 @@ views:
         x: 0
         y: -20
         z: 0
+      - reference: M6
+        x: 0
+        y: 0
+        z: -20
+      - reference: M7
+        x: 0
+        y: 0
+        z: -20
+      - reference: M8
+        x: 0
+        y: 0
+        z: -20
+      - reference: M9
+        x: 0
+        y: 0
+        z: -20
+      - reference: M1
+        x: 0
+        y: 0
+        z: 30
+      - reference: M10
+        x: 0
+        y: 0
+        z: -30
     
   # top_enclosure:
   #   prefix: '13_'
