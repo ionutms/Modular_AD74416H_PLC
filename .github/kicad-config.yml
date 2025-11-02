@@ -123,6 +123,12 @@ views:
         index: 1
       - reference: M9
         index: 1
+      - reference: U2
+        index: 0
+      - reference: U3
+        index: 0
+      - reference: U4
+        index: 0
     offset_footprints:
       - reference: M6
         x: 0
