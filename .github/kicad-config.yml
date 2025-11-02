@@ -171,7 +171,7 @@ views:
         z: 0
       - reference: M13
         x: 0
-        y: 20
+        y: -20
         z: 0
       - reference: M14
         x: 0
@@ -282,7 +282,7 @@ views:
         z: 0
       - reference: M13
         x: 0
-        y: -20
+        y: 20
         z: 0
       - reference: M14
         x: 0
