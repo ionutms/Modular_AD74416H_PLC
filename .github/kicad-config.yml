@@ -213,6 +213,8 @@ views:
     light_elevation: 30
     side: 'top'
     hide_footprints_by_index:
+      - reference: U1
+        index: 0
       - reference: U2
         index: 0
       - reference: U3
@@ -230,6 +232,8 @@ views:
       - reference: M9
         index: 0
     show_footprints_by_index:
+      - reference: U1
+        index: 2
       - reference: U2
         index: 2
       - reference: U3
