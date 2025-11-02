@@ -214,7 +214,7 @@ views:
     side: 'top'
     hide_footprints_by_index:
       - reference: U1
-        index: 0
+        index: 1
       - reference: U2
         index: 0
       - reference: U3
