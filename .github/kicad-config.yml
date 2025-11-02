@@ -114,38 +114,7 @@ views:
     pan: '0,-7,0'
     light_elevation: 30
     side: 'top'
-    hide_footprints_by_index:
-      - reference: U1
-        index: 1
-      - reference: U2
-        index: 0
-      - reference: U3
-        index: 0
-      - reference: U4
-        index: 0
-      - reference: MOD1
-        index: 0
-      - reference: MOD1
-        index: 1
-      - reference: M6
-        index: 0
-      - reference: M7
-        index: 0
-      - reference: M8
-        index: 0
-      - reference: M9
-        index: 0
     show_footprints_by_index:
-      - reference: U1
-        index: 2
-      - reference: U2
-        index: 2
-      - reference: U3
-        index: 2
-      - reference: U4
-        index: 2
-      - reference: MOD1
-        index: 2
       - reference: M6
         index: 1
       - reference: M7
@@ -154,24 +123,23 @@ views:
         index: 1
       - reference: M9
         index: 1
-
-  #   offset_footprints:
-  #     - reference: M6
-  #       x: 0
-  #       y: 0
-  #       z: 20
-  #     - reference: M7
-  #       x: 0
-  #       y: 0
-  #       z: 20
-  #     - reference: M8
-  #       x: 0
-  #       y: 0
-  #       z: 20
-  #     - reference: M9
-  #       x: 0
-  #       y: 0
-  #       z: 20
+    offset_footprints:
+      - reference: M6
+        x: 0
+        y: 0
+        z: 20
+      - reference: M7
+        x: 0
+        y: 0
+        z: 20
+      - reference: M8
+        x: 0
+        y: 0
+        z: 20
+      - reference: M9
+        x: 0
+        y: 0
+        z: 20
 
   # side_exploded_3:
   #   prefix: '10_'
