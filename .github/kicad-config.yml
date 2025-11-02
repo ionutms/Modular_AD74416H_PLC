@@ -244,17 +244,25 @@ views:
         index: 1
       - reference: M9
         index: 1
+      - reference: M6
+        index: 2
+      - reference: M7
+        index: 2
+      - reference: M8
+        index: 2
+      - reference: M9
+        index: 2
     show_footprints_by_index:
       - reference: U1
-        index: 2
+        index: 1
       - reference: U2
-        index: 2
+        index: 1
       - reference: U3
-        index: 2
+        index: 1
       - reference: U4
-        index: 2
+        index: 1
       - reference: MOD1
-        index: 2
+        index: 1
       - reference: M6
         index: 0
       - reference: M7
