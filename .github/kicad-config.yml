@@ -171,7 +171,7 @@ views:
         z: 0
       - reference: M13
         x: 0
-        y: -20
+        y: 20
         z: 0
       - reference: M14
         x: 0
@@ -237,13 +237,13 @@ views:
       - reference: MOD1
         index: 0
       - reference: M6
-        index: 0
+        index: 1
       - reference: M7
-        index: 0
+        index: 1
       - reference: M8
-        index: 0
+        index: 1
       - reference: M9
-        index: 0
+        index: 1
     show_footprints_by_index:
       - reference: U1
         index: 2
@@ -256,13 +256,30 @@ views:
       - reference: MOD1
         index: 2
       - reference: M6
-        index: 1
+        index: 0
       - reference: M7
-        index: 1
+        index: 0
       - reference: M8
-        index: 1
+        index: 0
       - reference: M9
-        index: 1
+        index: 0
+    offset_footprints:
+      - reference: M11
+        x: 0
+        y: -20
+        z: 0
+      - reference: M12
+        x: 0
+        y: -20
+        z: 0
+      - reference: M13
+        x: 0
+        y: -20
+        z: 0
+      - reference: M14
+        x: 0
+        y: -20
+        z: 0
     
   # top_enclosure:
   #   prefix: '13_'
