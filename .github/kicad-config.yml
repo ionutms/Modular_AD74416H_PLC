@@ -97,6 +97,8 @@ views:
       - M13
       - M14
     hide_footprints_by_index:
+      - reference: U1
+        index: 0
       - reference: U2
         index: 0
       - reference: U3
@@ -114,6 +116,8 @@ views:
         index: 0
       - reference: M9
         index: 0
+      - reference: U1
+        index: 1
       - reference: U2
         index: 1
       - reference: U3
