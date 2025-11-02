@@ -86,12 +86,17 @@ views:
     pan: '0,-1.5,0'
     light_elevation: 30
     side: 'top'
+    show_footprints:
+      - M2
+      - M3
+      - M4
+      - M5
     hide_footprints:
-      - M1
       - M6
       - M7
       - M8
       - M9
+      - M1
       - M10
       - M11
       - M12
@@ -101,246 +106,246 @@ views:
       - U3
       - U4
 
-  side_exploded_2:
-    prefix: '9_'
-    suffix: '_side_exploded_2'
-    zoom_factor: 0.26
-    rotate: '315,360,405'
-    pan: '0,-7,0'
-    light_elevation: 30
-    side: 'top'
-    hide_footprints_by_index:
-      - reference: U1
-        index: 1
-      - reference: U2
-        index: 0
-      - reference: U3
-        index: 0
-      - reference: U4
-        index: 0
-      - reference: MOD1
-        index: 0
-      - reference: MOD1
-        index: 1
-      - reference: M6
-        index: 0
-      - reference: M7
-        index: 0
-      - reference: M8
-        index: 0
-      - reference: M9
-        index: 0
-    show_footprints_by_index:
-      - reference: U1
-        index: 2
-      - reference: U2
-        index: 2
-      - reference: U3
-        index: 2
-      - reference: U4
-        index: 2
-      - reference: MOD1
-        index: 2
-      - reference: M6
-        index: 1
-      - reference: M7
-        index: 1
-      - reference: M8
-        index: 1
-      - reference: M9
-        index: 1
+  # side_exploded_2:
+  #   prefix: '9_'
+  #   suffix: '_side_exploded_2'
+  #   zoom_factor: 0.26
+  #   rotate: '315,360,405'
+  #   pan: '0,-7,0'
+  #   light_elevation: 30
+  #   side: 'top'
+  #   hide_footprints_by_index:
+  #     - reference: U1
+  #       index: 1
+  #     - reference: U2
+  #       index: 0
+  #     - reference: U3
+  #       index: 0
+  #     - reference: U4
+  #       index: 0
+  #     - reference: MOD1
+  #       index: 0
+  #     - reference: MOD1
+  #       index: 1
+  #     - reference: M6
+  #       index: 0
+  #     - reference: M7
+  #       index: 0
+  #     - reference: M8
+  #       index: 0
+  #     - reference: M9
+  #       index: 0
+  #   show_footprints_by_index:
+  #     - reference: U1
+  #       index: 2
+  #     - reference: U2
+  #       index: 2
+  #     - reference: U3
+  #       index: 2
+  #     - reference: U4
+  #       index: 2
+  #     - reference: MOD1
+  #       index: 2
+  #     - reference: M6
+  #       index: 1
+  #     - reference: M7
+  #       index: 1
+  #     - reference: M8
+  #       index: 1
+  #     - reference: M9
+  #       index: 1
 
-    offset_footprints:
-      - reference: M6
-        x: 0
-        y: 0
-        z: 20
-      - reference: M7
-        x: 0
-        y: 0
-        z: 20
-      - reference: M8
-        x: 0
-        y: 0
-        z: 20
-      - reference: M9
-        x: 0
-        y: 0
-        z: 20
+  #   offset_footprints:
+  #     - reference: M6
+  #       x: 0
+  #       y: 0
+  #       z: 20
+  #     - reference: M7
+  #       x: 0
+  #       y: 0
+  #       z: 20
+  #     - reference: M8
+  #       x: 0
+  #       y: 0
+  #       z: 20
+  #     - reference: M9
+  #       x: 0
+  #       y: 0
+  #       z: 20
 
-  side_exploded_3:
-    prefix: '10_'
-    suffix: '_side_exploded_3'
-    zoom_factor: 0.24
-    rotate: '315,360,405'
-    pan: '0,-5,0'
-    light_elevation: 30
-    side: 'top'
-    show_footprints:
-      - M11
-      - M12
-      - M13
-      - M14
-    offset_footprints:
-      - reference: M11
-        x: 0
-        y: 30
-        z: 0
-      - reference: M12
-        x: 0
-        y: 30
-        z: 0
-      - reference: M13
-        x: 0
-        y: -30
-        z: 0
-      - reference: M14
-        x: 0
-        y: 30
-        z: 0
+  # side_exploded_3:
+  #   prefix: '10_'
+  #   suffix: '_side_exploded_3'
+  #   zoom_factor: 0.24
+  #   rotate: '315,360,405'
+  #   pan: '0,-5,0'
+  #   light_elevation: 30
+  #   side: 'top'
+  #   show_footprints:
+  #     - M11
+  #     - M12
+  #     - M13
+  #     - M14
+  #   offset_footprints:
+  #     - reference: M11
+  #       x: 0
+  #       y: 30
+  #       z: 0
+  #     - reference: M12
+  #       x: 0
+  #       y: 30
+  #       z: 0
+  #     - reference: M13
+  #       x: 0
+  #       y: -30
+  #       z: 0
+  #     - reference: M14
+  #       x: 0
+  #       y: 30
+  #       z: 0
 
-  side_exploded_4:
-    prefix: '11_'
-    suffix: '_side_exploded_4'
-    zoom_factor: 0.19
-    rotate: '315,360,405'
-    pan: '0,-7,0'
-    light_elevation: 30
-    side: 'top'
-    show_footprints:
-      - M1
-      - M10
-    offset_footprints:
-      - reference: M1
-        x: 0
-        y: 0
-        z: -30
-      - reference: M10
-        x: 0
-        y: 0
-        z: 40
-    hide_footprints_by_index:
-      - reference: M6
-        index: 1
-      - reference: M7
-        index: 1
-      - reference: M8
-        index: 1
-      - reference: M9
-        index: 1
-    show_footprints_by_index:
-      - reference: M6
-        index: 2
-      - reference: M7
-        index: 2
-      - reference: M8
-        index: 2
-      - reference: M9
-        index: 2
+  # side_exploded_4:
+  #   prefix: '11_'
+  #   suffix: '_side_exploded_4'
+  #   zoom_factor: 0.19
+  #   rotate: '315,360,405'
+  #   pan: '0,-7,0'
+  #   light_elevation: 30
+  #   side: 'top'
+  #   show_footprints:
+  #     - M1
+  #     - M10
+  #   offset_footprints:
+  #     - reference: M1
+  #       x: 0
+  #       y: 0
+  #       z: -30
+  #     - reference: M10
+  #       x: 0
+  #       y: 0
+  #       z: 40
+  #   hide_footprints_by_index:
+  #     - reference: M6
+  #       index: 1
+  #     - reference: M7
+  #       index: 1
+  #     - reference: M8
+  #       index: 1
+  #     - reference: M9
+  #       index: 1
+  #   show_footprints_by_index:
+  #     - reference: M6
+  #       index: 2
+  #     - reference: M7
+  #       index: 2
+  #     - reference: M8
+  #       index: 2
+  #     - reference: M9
+  #       index: 2
 
-  side_enclosure:
-    prefix: '12_'
-    suffix: '_side_enclosure'
-    zoom_factor: 0.3
-    rotate: '315,360,405'
-    pan: '0,-3,0'
-    light_elevation: 30
-    side: 'top'
-    show_footprints:
-      - M1
-      - M2
-      - M3
-      - M4
-      - M5
-      - M10
-      - M11
-      - M12
-      - M13
-      - M14
-    hide_footprints_by_index:
-      - reference: U1
-        index: 0
-      - reference: U2
-        index: 0
-      - reference: U3
-        index: 0
-      - reference: U4
-        index: 0
-      - reference: MOD1
-        index: 0
-    show_footprints_by_index:
-      - reference: M6
-        index: 0
-      - reference: M7
-        index: 0
-      - reference: M8
-        index: 0
-      - reference: M9
-        index: 0
-      - reference: U1
-        index: 1
-      - reference: U2
-        index: 1
-      - reference: U3
-        index: 1
-      - reference: U4
-        index: 1
-      - reference: MOD1
-        index: 1
+  # side_enclosure:
+  #   prefix: '12_'
+  #   suffix: '_side_enclosure'
+  #   zoom_factor: 0.3
+  #   rotate: '315,360,405'
+  #   pan: '0,-3,0'
+  #   light_elevation: 30
+  #   side: 'top'
+  #   show_footprints:
+  #     - M1
+  #     - M2
+  #     - M3
+  #     - M4
+  #     - M5
+  #     - M10
+  #     - M11
+  #     - M12
+  #     - M13
+  #     - M14
+  #   hide_footprints_by_index:
+  #     - reference: U1
+  #       index: 0
+  #     - reference: U2
+  #       index: 0
+  #     - reference: U3
+  #       index: 0
+  #     - reference: U4
+  #       index: 0
+  #     - reference: MOD1
+  #       index: 0
+  #   show_footprints_by_index:
+  #     - reference: M6
+  #       index: 0
+  #     - reference: M7
+  #       index: 0
+  #     - reference: M8
+  #       index: 0
+  #     - reference: M9
+  #       index: 0
+  #     - reference: U1
+  #       index: 1
+  #     - reference: U2
+  #       index: 1
+  #     - reference: U3
+  #       index: 1
+  #     - reference: U4
+  #       index: 1
+  #     - reference: MOD1
+  #       index: 1
     
-  top_enclosure:
-    prefix: '13_'
-    suffix: '_top_enclosure'
-    zoom_factor: 0.35
-    rotate: '0,0,0'
-    pan: '0,0,0'
-    light_elevation: 60
-    side: 'top'
+  # top_enclosure:
+  #   prefix: '13_'
+  #   suffix: '_top_enclosure'
+  #   zoom_factor: 0.35
+  #   rotate: '0,0,0'
+  #   pan: '0,0,0'
+  #   light_elevation: 60
+  #   side: 'top'
     
-  bottom_enclosure:
-    prefix: '14_'
-    suffix: '_bottom_enclosure'
-    zoom_factor: 0.35
-    rotate: '0,0,0'
-    pan: '0,0,0'
-    light_elevation: 60
-    side: 'bottom'
+  # bottom_enclosure:
+  #   prefix: '14_'
+  #   suffix: '_bottom_enclosure'
+  #   zoom_factor: 0.35
+  #   rotate: '0,0,0'
+  #   pan: '0,0,0'
+  #   light_elevation: 60
+  #   side: 'bottom'
     
-  left_enclosure:
-    prefix: '15_'
-    suffix: '_left_enclosure'
-    zoom_factor: 0.6
-    rotate: '0,0,0'
-    pan: '0,-5,0'
-    light_elevation: 10
-    side: 'left'
+  # left_enclosure:
+  #   prefix: '15_'
+  #   suffix: '_left_enclosure'
+  #   zoom_factor: 0.6
+  #   rotate: '0,0,0'
+  #   pan: '0,-5,0'
+  #   light_elevation: 10
+  #   side: 'left'
     
-  right_enclosure:
-    prefix: '16_'
-    suffix: '_right_enclosure'
-    zoom_factor: 0.6
-    rotate: '0,0,0'
-    pan: '0,-5,0'
-    light_elevation: 10
-    side: 'right'
+  # right_enclosure:
+  #   prefix: '16_'
+  #   suffix: '_right_enclosure'
+  #   zoom_factor: 0.6
+  #   rotate: '0,0,0'
+  #   pan: '0,-5,0'
+  #   light_elevation: 10
+  #   side: 'right'
     
-  front_enclosure:
-    prefix: '17_'
-    suffix: '_front_enclosure'
-    zoom_factor: 0.6
-    rotate: '0,0,0'
-    pan: '0,-5,0'
-    light_elevation: 10
-    side: 'front'
+  # front_enclosure:
+  #   prefix: '17_'
+  #   suffix: '_front_enclosure'
+  #   zoom_factor: 0.6
+  #   rotate: '0,0,0'
+  #   pan: '0,-5,0'
+  #   light_elevation: 10
+  #   side: 'front'
     
-  back_enclosure:
-    prefix: '18_'
-    suffix: '_back_enclosure'
-    zoom_factor: 0.6
-    rotate: '0,0,0'
-    pan: '0,-5,0'
-    light_elevation: 10
-    side: 'back'
+  # back_enclosure:
+  #   prefix: '18_'
+  #   suffix: '_back_enclosure'
+  #   zoom_factor: 0.6
+  #   rotate: '0,0,0'
+  #   pan: '0,-5,0'
+  #   light_elevation: 10
+  #   side: 'back'
 
 # Default values for any unspecified parameters
 defaults:
