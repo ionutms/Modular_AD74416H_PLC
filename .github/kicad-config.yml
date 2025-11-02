@@ -96,6 +96,15 @@ views:
       - M12
       - M13
       - M14
+    hide_footprints_by_index:
+      - reference: U2
+        index: 0
+      - reference: U3
+        index: 0
+      - reference: U4
+        index: 0
+      - reference: MOD1
+        index: 0
     show_footprints_by_index:
       - reference: M6
         index: 0
@@ -105,6 +114,14 @@ views:
         index: 0
       - reference: M9
         index: 0
+      - reference: U2
+        index: 1
+      - reference: U3
+        index: 1
+      - reference: U4
+        index: 1
+      - reference: MOD1
+        index: 1
     
   top_enclosure:
     prefix: '9_'
