@@ -2839,7 +2839,7 @@
 			)
 			(fill no)
 			(layer "Cmts.User")
-			(uuid "5b624d48-fbf5-494b-b12f-a3cfc05bb79a")
+			(uuid "506705df-a2a7-46fe-89c7-d5aa63337434")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.54 0)
@@ -2876,7 +2876,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz -90 -0 -0)
 			)
 		)
 		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/ad74416h_power_interface_module_v3.step"
@@ -2888,7 +2888,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
