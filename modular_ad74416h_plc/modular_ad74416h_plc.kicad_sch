@@ -5,6 +5,198 @@
 	(uuid "947a17bd-6931-4ad8-bf27-70104debc844")
 	(paper "A4")
 	(lib_symbols
+		(symbol "MINIMAL_AD74416H_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "A"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "modules_footprints:minimal_ad74416h"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MINIMAL_AD74416H_1_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MINIMAL_AD74416H_2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "A"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "modules_footprints:minimal_ad74416h"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MINIMAL_AD74416H_2_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MINIMAL_AD74416H_3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "A"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "modules_footprints:minimal_ad74416h"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MINIMAL_AD74416H_3_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "UNITED_MECHANICAL_DATA_BASE:M_2203350"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -434,7 +626,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "A"
 				(at 5.08 7.62 0)
 				(effects
 					(font
@@ -1553,6 +1745,7 @@
 		)
 	)
 	(symbol
+		(lib_name "MINIMAL_AD74416H_1")
 		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H")
 		(at 160.02 101.6 0)
 		(unit 1)
@@ -1562,7 +1755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a66b3b1b-b5ea-4e24-a984-90104994f333")
-		(property "Reference" "U1"
+		(property "Reference" "A1"
 			(at 166.37 100.3299 0)
 			(effects
 				(font
@@ -1611,7 +1804,7 @@
 		(instances
 			(project ""
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "U1")
+					(reference "A1")
 					(unit 1)
 				)
 			)
@@ -1824,7 +2017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cda48f18-c8ec-4b2a-90e6-1d5257d6e0f9")
-		(property "Reference" "U4"
+		(property "Reference" "A4"
 			(at 219.71 100.3299 0)
 			(effects
 				(font
@@ -1873,13 +2066,14 @@
 		(instances
 			(project "modular_ad74416h_plc"
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "U4")
+					(reference "A4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_name "MINIMAL_AD74416H_3")
 		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H")
 		(at 195.58 101.6 0)
 		(unit 1)
@@ -1889,7 +2083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce29a2b7-0673-4f33-ae0e-55457f917b14")
-		(property "Reference" "U3"
+		(property "Reference" "A3"
 			(at 201.93 100.3299 0)
 			(effects
 				(font
@@ -1938,7 +2132,7 @@
 		(instances
 			(project "modular_ad74416h_plc"
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "U3")
+					(reference "A3")
 					(unit 1)
 				)
 			)
@@ -2077,6 +2271,7 @@
 		)
 	)
 	(symbol
+		(lib_name "MINIMAL_AD74416H_2")
 		(lib_id "UNITED_MODULES_DATA_BASE:MINIMAL_AD74416H")
 		(at 177.8 101.6 0)
 		(unit 1)
@@ -2086,7 +2281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc9600ac-00f1-4589-bd82-8f81523f362a")
-		(property "Reference" "U2"
+		(property "Reference" "A2"
 			(at 184.15 100.3299 0)
 			(effects
 				(font
@@ -2135,7 +2330,7 @@
 		(instances
 			(project "modular_ad74416h_plc"
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "U2")
+					(reference "A2")
 					(unit 1)
 				)
 			)

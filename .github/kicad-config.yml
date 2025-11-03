@@ -102,9 +102,9 @@ views:
       - M12
       - M13
       - M14
-      - U2
-      - U3
-      - U4
+      - A2
+      - A3
+      - A4
 
   side_exploded_2:
     prefix: '9_'
@@ -123,11 +123,11 @@ views:
         index: 1
       - reference: M9
         index: 1
-      - reference: U2
+      - reference: A2
         index: 0
-      - reference: U3
+      - reference: A3
         index: 0
-      - reference: U4
+      - reference: A4
         index: 0
     offset_footprints:
       - reference: M6
@@ -226,13 +226,13 @@ views:
     light_elevation: 30
     side: 'top'
     hide_footprints_by_index:
-      - reference: U1
+      - reference: A1
         index: 0
-      - reference: U2
+      - reference: A2
         index: 0
-      - reference: U3
+      - reference: A3
         index: 0
-      - reference: U4
+      - reference: A4
         index: 0
       - reference: MOD1
         index: 0
@@ -253,13 +253,13 @@ views:
       - reference: M9
         index: 2
     show_footprints_by_index:
-      - reference: U1
+      - reference: A1
         index: 1
-      - reference: U2
+      - reference: A2
         index: 1
-      - reference: U3
+      - reference: A3
         index: 1
-      - reference: U4
+      - reference: A4
         index: 1
       - reference: MOD1
         index: 1
