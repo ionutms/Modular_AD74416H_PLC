@@ -1194,6 +1194,101 @@
 			)
 		)
 	)
+	(footprint "modules_footprints:minimal_ad74416h_stack_adapter_v2"
+		(layer "F.Cu")
+		(uuid "0476749e-3b8a-4653-9f54-9998f4e3ad7b")
+		(at 193.8274 154.559)
+		(property "Reference" "A6"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "87b47bb3-3e59-4757-b545-16f4723abb33")
+			(effects
+				(font
+					(size 0.762 0.762)
+					(thickness 0.1524)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "e9e234c9-c063-4f41-9230-42026c949a23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0c49b8d-b442-4b72-89c1-94c7a636ac97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb805923-f3fb-405c-9268-32d88b50688e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/51e2ce45-c4aa-4845-8d82-bcd7a965a4c8")
+		(sheetname "/")
+		(sheetfile "modular_ad74416h_plc.kicad_sch")
+		(fp_rect
+			(start -24.13 0)
+			(end 24.13 1.524)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "123ee651-e3c2-4648-8f77-531205223e34")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "5a672f0e-4cdc-4767-8c49-4d7d07aace41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h_stack_adapter.step"
+			(offset
+				(xyz 0 0 20.6248)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
+	)
 	(footprint "mechanical_parts:2203369_v2"
 		(layer "F.Cu")
 		(uuid "05f7fc9e-eb26-4f2f-b71f-a7c7908da516")
@@ -1740,101 +1835,6 @@
 			)
 			(rotate
 				(xyz -0 -0 -0)
-			)
-		)
-	)
-	(footprint "modules_footprints:minimal_ad74416h_stack_adapter_v2"
-		(layer "F.Cu")
-		(uuid "3323083b-562d-4087-9c9e-f4bdc90d66f6")
-		(at 193.8274 154.32786)
-		(property "Reference" "MOD6"
-			(at 0 -0.5 0)
-			(unlocked yes)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "5227e672-19f0-4cdf-9f21-893bef43c85f")
-			(effects
-				(font
-					(size 0.762 0.762)
-					(thickness 0.1524)
-					(bold yes)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 0 1 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "d1bdc299-0c4e-459e-b2a9-7f76de1b6cee")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d54f99cc-b505-4911-abd5-ca17767382df")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f5aea093-b028-49ba-acb8-01a8a42262db")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/51e2ce45-c4aa-4845-8d82-bcd7a965a4c8")
-		(sheetname "/")
-		(sheetfile "modular_ad74416h_plc.kicad_sch")
-		(fp_rect
-			(start -24.13 0)
-			(end 24.13 1.524)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "Cmts.User")
-			(uuid "f21f68fe-4101-4ebe-ae03-1bf63376bd52")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 2.5 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "6a04e2d8-45e7-482d-bd7b-9f4c79be9e0d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3D_MODELS_VAULT}/3D_models/modules/minimal_ad74416h_stack_adapter.step"
-			(offset
-				(xyz 0 0 20.6248)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -0)
 			)
 		)
 	)

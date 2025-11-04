@@ -690,7 +690,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "MOD"
+			(property "Reference" "A"
 				(at 5.08 7.62 0)
 				(effects
 					(font
@@ -1358,7 +1358,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51e2ce45-c4aa-4845-8d82-bcd7a965a4c8")
-		(property "Reference" "MOD6"
+		(property "Reference" "A6"
 			(at 201.93 118.1099 0)
 			(effects
 				(font
@@ -1407,7 +1407,7 @@
 		(instances
 			(project ""
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "MOD6")
+					(reference "A6")
 					(unit 1)
 				)
 			)
