@@ -234,7 +234,7 @@ views:
         index: 0
       - reference: A4
         index: 0
-      - reference: MOD1
+      - reference: A5
         index: 0
       - reference: M6
         index: 1
@@ -261,7 +261,7 @@ views:
         index: 1
       - reference: A4
         index: 1
-      - reference: MOD1
+      - reference: A5
         index: 1
       - reference: M6
         index: 0
