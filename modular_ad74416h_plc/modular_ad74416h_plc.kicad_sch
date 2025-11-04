@@ -754,7 +754,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "MOD"
+			(property "Reference" "A"
 				(at 0 7.62 0)
 				(effects
 					(font
@@ -2148,7 +2148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc4d7bcd-d7be-43f1-9949-21eb73bef70e")
-		(property "Reference" "MOD2"
+		(property "Reference" "A8"
 			(at 219.71 118.1099 0)
 			(effects
 				(font
@@ -2197,7 +2197,7 @@
 		(instances
 			(project ""
 				(path "/947a17bd-6931-4ad8-bf27-70104debc844"
-					(reference "MOD2")
+					(reference "A8")
 					(unit 1)
 				)
 			)
