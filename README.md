@@ -46,7 +46,20 @@ modular_ad74416h_plc/
 │   │   ├── 2_modular_ad74416h_plc_top.png
 │   │   ├── 3_modular_ad74416h_plc_bottom.png
 │   │   ├── 4_modular_ad74416h_plc_left.png
-│   │   └── 5_modular_ad74416h_plc_right.png
+│   │   ├── 5_modular_ad74416h_plc_right.png
+│   │   ├── 6_modular_ad74416h_plc_front.png
+│   │   ├── 7_modular_ad74416h_plc_back.png
+│   │   ├── 8_modular_ad74416h_plc_side_exploded_1.png
+│   │   ├── 9_modular_ad74416h_plc_side_exploded_2.png
+│   │   ├── 10_modular_ad74416h_plc_side_exploded_3.png
+│   │   ├── 11_modular_ad74416h_plc_side_exploded_4.png
+│   │   ├── 12_modular_ad74416h_plc_side_enclosure.png
+│   │   ├── 13_modular_ad74416h_plc_top_enclosure.png
+│   │   ├── 14_modular_ad74416h_plc_bottom_enclosure.png
+│   │   ├── 15_modular_ad74416h_plc_left_enclosure.png
+│   │   ├── 16_modular_ad74416h_plc_right_enclosure.png
+│   │   ├── 17_modular_ad74416h_plc_front_enclosure.png
+│   │   └── 18_modular_ad74416h_plc_back_enclosure.png
 │   └── schematics/                              # Schematic PDF exports
 │       └── modular_ad74416h_plc_schematics.pdf
 └── KiCAD_Symbols_Generator/                     # Submodule for symbol generation from CSV data
@@ -146,6 +159,7 @@ The `docs` folder contains:
 
 The following images showcase the PCB design from different perspectives:
 
+### PCB Views
 ![Top View](modular_ad74416h_plc/docs/pictures/2_modular_ad74416h_plc_top.png)
 *Top View of the PCB*
 
@@ -160,6 +174,47 @@ The following images showcase the PCB design from different perspectives:
 
 ![Right View](modular_ad74416h_plc/docs/pictures/5_modular_ad74416h_plc_right.png)
 *Right View of the PCB*
+
+![Front View](modular_ad74416h_plc/docs/pictures/6_modular_ad74416h_plc_front.png)
+*Front View of the PCB*
+
+![Back View](modular_ad74416h_plc/docs/pictures/7_modular_ad74416h_plc_back.png)
+*Back View of the PCB*
+
+### Exploded Views
+![Side Exploded View 1](modular_ad74416h_plc/docs/pictures/8_modular_ad74416h_plc_side_exploded_1.png)
+*Side Exploded View 1*
+
+![Side Exploded View 2](modular_ad74416h_plc/docs/pictures/9_modular_ad74416h_plc_side_exploded_2.png)
+*Side Exploded View 2*
+
+![Side Exploded View 3](modular_ad74416h_plc/docs/pictures/10_modular_ad74416h_plc_side_exploded_3.png)
+*Side Exploded View 3*
+
+![Side Exploded View 4](modular_ad74416h_plc/docs/pictures/11_modular_ad74416h_plc_side_exploded_4.png)
+*Side Exploded View 4*
+
+### Enclosure Views
+![Side View with Enclosure](modular_ad74416h_plc/docs/pictures/12_modular_ad74416h_plc_side_enclosure.png)
+*Side View with Enclosure*
+
+![Top View with Enclosure](modular_ad74416h_plc/docs/pictures/13_modular_ad74416h_plc_top_enclosure.png)
+*Top View with Enclosure*
+
+![Bottom View with Enclosure](modular_ad74416h_plc/docs/pictures/14_modular_ad74416h_plc_bottom_enclosure.png)
+*Bottom View with Enclosure*
+
+![Left View with Enclosure](modular_ad74416h_plc/docs/pictures/15_modular_ad74416h_plc_left_enclosure.png)
+*Left View with Enclosure*
+
+![Right View with Enclosure](modular_ad74416h_plc/docs/pictures/16_modular_ad74416h_plc_right_enclosure.png)
+*Right View with Enclosure*
+
+![Front View with Enclosure](modular_ad74416h_plc/docs/pictures/17_modular_ad74416h_plc_front_enclosure.png)
+*Front View with Enclosure*
+
+![Back View with Enclosure](modular_ad74416h_plc/docs/pictures/18_modular_ad74416h_plc_back_enclosure.png)
+*Back View with Enclosure*
 
 ## License
 
